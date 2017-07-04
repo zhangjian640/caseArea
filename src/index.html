@@ -6,6 +6,7 @@
     <title>武汉公安办案区管理平台</title>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/swiper.min.css">
     <link rel="stylesheet" href="./css/jquery.datetimepicker.css">
 </head>
 <body>
@@ -23,7 +24,7 @@
 <div class="content">
     <div class="aside">
         <div class="situation">
-            <div class="title"><img src="./images/index/icon_situation.png" alt="办案区使用情况"><span>办案区使用情况</span></div>
+            <div class="title-wrap"><span class="icon"></span><span class="title">办案区使用情况</span></div>
             <ul class="case-count">
                 <li>当前正在办理案件数：<span class="num">2</span></li>
                 <li>
@@ -58,36 +59,72 @@
             </ul>
         </div>
         <div class="warn">
-            <div class="title"><img src="./images/index/icon_warn.png" alt="预警报警公告"><span>预警报警公告</span></div>
-            <div class="content">
-                <div class="content-photo">
-                    <div class="photo-wrap">
-                        <img src="./images/index/police.jpg">
-                    </div>
-                    <div class="photo-name">汪洋</div>
-                </div>
-                <div class="content-msg">
-                    你正办理的王小虎醉驾案件流程操作异常，嫌疑人指纹未采集，请尽快补齐相关流程手续。
-                </div>
+            <div class="title-wrap"><span class="icon"></span><span class="title">预警报警公告</span></div>
+            <div class="warn-content swiper-container">
+                <ul class="swiper-wrapper">
+                    <li class="swiper-slide">
+                        <div class="content-photo">
+                            <div class="photo-wrap">
+                                <img src="./images/index/police.jpg">
+                            </div>
+                            <div class="photo-name">王XX</div>
+                        </div>
+                        <div class="content-msg">
+                            你正办理的王小虎醉驾案件流程操作异常，嫌疑人指纹未采集，请尽快补齐相关流程手续。
+                        </div>
+                    </li>
+                    <li class="swiper-slide">
+                        <div class="content-photo">
+                            <div class="photo-wrap">
+                                <img src="./images/index/police.jpg">
+                            </div>
+                            <div class="photo-name">张XXX</div>
+                        </div>
+                        <div class="content-msg">
+                            你正办理的王小虎醉驾案件流程操作异常，嫌疑人指纹未采集，请尽快补齐相关流程手续。
+                        </div>
+                    </li>
+                </ul>
             </div>
         </div>
         <div class="schedule">
-            <div class="title"><img src="./images/index/icon_schedule.png" alt="办案区民警调度公告"><span>办案区民警调度公告</span></div>
-            <div class="content">
-                <ul class="schedule-card">
-                    <li class="schedule-photo">
-                        <img src="./images/index/police_small.jpg" alt="">
+            <div class="title-wrap"><span class="icon"></span><span class="title">办案区民警调度公告</span></div>
+            <div class="schedule-content swiper-container">
+                <ul class="swiper-wrapper">
+                    <li class="swiper-slide">
+                        <ul class="schedule-card">
+                            <li class="schedule-photo">
+                                <img src="./images/index/police_small.jpg" alt="">
+                            </li>
+                            <li class="schedule-name">
+                                <div class="name-zh">张XX</div>
+                                <div class="name-pinyin">ZhangXX·警号013806</div>
+                            </li>
+                            <li class="dot"><img src="./images/index/dot.png"></li>
+                        </ul>
+                        <div class="schedule-msg">
+                            <div>请您进入询问室003</div>
+                            <div>对嫌疑人王小虎进行审问</div>
+                        </div>
                     </li>
-                    <li class="schedule-name">
-                        <div class="name-zh">张欣</div>
-                        <div class="name-pinyin">Zhangxin·警号013806</div>
+                    <li class="swiper-slide">
+                        <ul class="schedule-card">
+                            <li class="schedule-photo">
+                                <img src="./images/index/police_small.jpg" alt="">
+                            </li>
+                            <li class="schedule-name">
+                                <div class="name-zh">李XX</div>
+                                <div class="name-pinyin">LiXX·警号012306</div>
+                            </li>
+                            <li class="dot"><img src="./images/index/dot.png"></li>
+                        </ul>
+                        <div class="schedule-msg">
+                            <div>请您进入询问室004</div>
+                            <div>对嫌疑人王小虎进行审问</div>
+                        </div>
                     </li>
-                    <li class="dot"><img src="./images/index/dot.png"></li>
                 </ul>
-                <div class="schedule-msg">
-                    <div>请您进入询问室003</div>
-                    <div>对嫌疑人王小虎进行审问</div>
-                </div>
+
             </div>
         </div>
 
@@ -151,7 +188,7 @@
             </div>
             <div class="area-video">
                 <div class="title">行为识别雷达图</div>
-                <video src="music.mp4" controls1></video>
+                <video id="video" src="music.mp4" controls></video>
             </div>
         </div>
         <div class="case-detail">
@@ -169,112 +206,115 @@
                 <li class="time-left">剩余时间</li>
                 <li class="handingman">办案人</li>
             </ul>
-            <div class="body-wrap">
-
-                <ul class="body">
-                    <li class="suspect blue">王小虎</li>
-                    <li class="time">2017.07.01&nbsp;17:09:21</li>
-                    <li class="reason">醉驾，提请审问</li>
-                    <li class="stage">询问</li>
-                    <li class="warning">
-                        <span>20%</span>
-                        <div class="progress active">
-                            <div class="progress-bar  progress-bar-info progress-bar-striped" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 80%"></div>
-                        </div>
-                    </li>
-                    <li class="time-left">2小时29分钟</li>
-                    <li class="handingman">
-                        <ul>
-                            <li class="photo">
-                                <img src="./images/index/police_small.jpg" alt="">
-                            </li>
-                            <li class="name">
-                                <div class="zh">汪洋</div>
-                                <div class="pinyin">Wang&nbsp;Yang</div>
-                            </li>
-                        </ul>
-                    </li>
+            <div class="body-wrap swiper-container">
+                <ul class="swiper-wrapper">
+                    <ul class="swiper-slide body">
+                        <li class="suspect blue">王小川</li>
+                        <li class="time">2017.07.01&nbsp;17:09:21</li>
+                        <li class="reason">醉驾，提请审问</li>
+                        <li class="stage">询问</li>
+                        <li class="warning">
+                            <span>20%</span>
+                            <div class="progress active">
+                                <div class="progress-bar  progress-bar-info progress-bar-striped" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 80%"></div>
+                            </div>
+                        </li>
+                        <li class="time-left">2小时29分钟</li>
+                        <li class="handingman">
+                            <ul>
+                                <li class="photo">
+                                    <img src="./images/index/police_small.jpg" alt="">
+                                </li>
+                                <li class="name">
+                                    <div class="zh">汪洋</div>
+                                    <div class="pinyin">Wang&nbsp;Yang</div>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="swiper-slide body">
+                        <li class="suspect yellow">王小虎</li>
+                        <li class="time">2017.07.01&nbsp;17:09:21</li>
+                        <li class="reason">醉驾，提请审问</li>
+                        <li class="stage yellow">询问</li>
+                        <li class="warning">
+                            <span>20%</span>
+                            <div class="progress active">
+                                <div class="progress-bar  progress-bar-warning progress-bar-striped" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 80%"></div>
+                            </div>
+                        </li>
+                        <li class="time-left">2小时29分钟</li>
+                        <li class="handingman">
+                            <ul>
+                                <li class="photo">
+                                    <img src="./images/index/police_small.jpg" alt="">
+                                </li>
+                                <li class="name">
+                                    <div class="zh">汪洋</div>
+                                    <div class="pinyin">Wang&nbsp;Yang</div>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="swiper-slide body">
+                        <li class="suspect red">非凡</li>
+                        <li class="time">2017.07.01&nbsp;17:09:21</li>
+                        <li class="reason">醉驾，提请审问</li>
+                        <li class="stage red1">询问</li>
+                        <li class="warning">
+                            <span>20%</span>
+                            <div class="progress active">
+                                <div class="progress-bar  progress-bar-danger progress-bar-striped" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 80%"></div>
+                            </div>
+                        </li>
+                        <li class="time-left">2小时29分钟</li>
+                        <li class="handingman">
+                            <ul>
+                                <li class="photo">
+                                    <img src="./images/index/police_small.jpg" alt="">
+                                </li>
+                                <li class="name">
+                                    <div class="zh">汪洋</div>
+                                    <div class="pinyin">Wang&nbsp;Yang</div>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="swiper-slide body">
+                        <li class="suspect red">卫视</li>
+                        <li class="time">2017.07.01&nbsp;17:09:21</li>
+                        <li class="reason">醉驾，提请审问</li>
+                        <li class="stage red2">询问</li>
+                        <li class="warning">
+                            <span>20%</span>
+                            <div class="progress active">
+                                <div class="progress-bar  progress-bar-danger progress-bar-striped" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 80%"></div>
+                            </div>
+                        </li>
+                        <li class="time-left">2小时29分钟</li>
+                        <li class="handingman">
+                            <ul>
+                                <li class="photo">
+                                    <img src="./images/index/police_small.jpg" alt="">
+                                </li>
+                                <li class="name">
+                                    <div class="zh">汪洋</div>
+                                    <div class="pinyin">Wang&nbsp;Yang</div>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
                 </ul>
-                <ul class="body">
-                    <li class="suspect yellow">王小虎</li>
-                    <li class="time">2017.07.01&nbsp;17:09:21</li>
-                    <li class="reason">醉驾，提请审问</li>
-                    <li class="stage yellow">询问</li>
-                    <li class="warning">
-                        <span>20%</span>
-                        <div class="progress active">
-                            <div class="progress-bar  progress-bar-warning progress-bar-striped" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 80%"></div>
-                        </div>
-                    </li>
-                    <li class="time-left">2小时29分钟</li>
-                    <li class="handingman">
-                        <ul>
-                            <li class="photo">
-                                <img src="./images/index/police_small.jpg" alt="">
-                            </li>
-                            <li class="name">
-                                <div class="zh">汪洋</div>
-                                <div class="pinyin">Wang&nbsp;Yang</div>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-                <ul class="body">
-                    <li class="suspect red">王小虎</li>
-                    <li class="time">2017.07.01&nbsp;17:09:21</li>
-                    <li class="reason">醉驾，提请审问</li>
-                    <li class="stage red1">询问</li>
-                    <li class="warning">
-                        <span>20%</span>
-                        <div class="progress active">
-                            <div class="progress-bar  progress-bar-danger progress-bar-striped" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 80%"></div>
-                        </div>
-                    </li>
-                    <li class="time-left">2小时29分钟</li>
-                    <li class="handingman">
-                        <ul>
-                            <li class="photo">
-                                <img src="./images/index/police_small.jpg" alt="">
-                            </li>
-                            <li class="name">
-                                <div class="zh">汪洋</div>
-                                <div class="pinyin">Wang&nbsp;Yang</div>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-                <ul class="body">
-                    <li class="suspect red">王小虎</li>
-                    <li class="time">2017.07.01&nbsp;17:09:21</li>
-                    <li class="reason">醉驾，提请审问</li>
-                    <li class="stage red2">询问</li>
-                    <li class="warning">
-                        <span>20%</span>
-                        <div class="progress active">
-                            <div class="progress-bar  progress-bar-danger progress-bar-striped" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 80%"></div>
-                        </div>
-                    </li>
-                    <li class="time-left">2小时29分钟</li>
-                    <li class="handingman">
-                        <ul>
-                            <li class="photo">
-                                <img src="./images/index/police_small.jpg" alt="">
-                            </li>
-                            <li class="name">
-                                <div class="zh">汪洋</div>
-                                <div class="pinyin">Wang&nbsp;Yang</div>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-
             </div>
+
         </div>
     </div>
 </div>
     <script src="./js/jquery.js"></script>
+    <script src="./js/swiper.jquery.min.js"></script>
     <script src="./js/jquery.datetimepicker.full.min.js"></script>
     <script>
+        // 时间控件
       $.datetimepicker.setLocale('zh');
       $('#datetimepicker').datetimepicker({
         dayOfWeekStart : 1,
@@ -283,6 +323,35 @@
         lang:'zh',
         startDate:	'2017/01/01'
       });
+
+      // 在审案件滚动
+        var caseSwiper = new Swiper('.body-wrap', {
+          autoplayDisableOnInteraction : false, //用户操作swiper之后，是否禁止autoplay。默认为true：停止。
+          slidesPerView: 4,
+          spaceBetween: 10,
+          direction: 'vertical',
+          loop: true,
+          autoplay: 3500
+        });
+
+        // 预警报警滚动
+        var caseSwiper = new Swiper('.warn-content', {
+          autoplayDisableOnInteraction : false,
+          direction: 'vertical',
+          loop: true,
+          effect : 'cube',
+          autoplay: 4000
+        });
+
+        // 民警调度公告
+        var scheduleSwiper = new Swiper('.schedule-content', {
+          autoplayDisableOnInteraction : false,
+          direction: 'vertical',
+          loop: true,
+          effect : 'flip',
+          autoplay: 3000
+        });
+
     </script>
 </body>
 </html>

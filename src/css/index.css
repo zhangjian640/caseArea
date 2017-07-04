@@ -1,4 +1,5 @@
 @charset "utf-8";
+
 .header {
     height: 80px;
     margin: 10px 15px 0;
@@ -39,12 +40,6 @@
     margin-top: 20px;
 }
 
-/*下*/
-.content {
-    margin-top: 7px;
-    position: relative;
-}
-
 /*左边栏*/
 /*上*/
 .aside {
@@ -59,7 +54,7 @@
     width: 350px;
 }
 
-.aside .title {
+.aside .title-wrap {
     position: relative;
     width: 350px;
     height: 52px;
@@ -70,12 +65,23 @@
     background: #1c2e53;
 }
 
-.aside .title img {
-    margin-left: 10px;
-    vertical-align: middle;
+.aside .title-wrap .icon {
+    position: absolute;
+    left: 0;
+    width: 40px;
+    height: 52px;
+}
+.aside .situation .title-wrap .icon{
+    background: url(../images/index/icon_situation.png) no-repeat center;
+}
+.aside .warn .title-wrap .icon{
+    background: url(../images/index/icon_warn.png) no-repeat center;
+}
+.aside .schedule .title-wrap .icon{
+    background: url(../images/index/icon_schedule.png) no-repeat center;
 }
 
-.aside .title span {
+.aside .title-wrap .title {
     position: absolute;
     left: 40px;
 }
@@ -140,11 +146,11 @@
 }
 
 /*中*/
-.aside .warn .title {
+.aside .warn .title-wrap {
     margin-top: 14px;
 }
 
-.aside .warn .content {
+.aside .warn .warn-content {
     width: 350px;
     height: 288px;
     margin-top: 1px;
@@ -191,11 +197,11 @@
     color: #9fa3ad;
 }
 
-.aside .schedule .title {
+.aside .schedule .title-wrap {
     margin-top: 14px;
 }
 
-.aside .schedule .content{
+.aside .schedule .schedule-content{
     width: 350px;
     height: 188px;
     margin-top: 1px;
@@ -355,6 +361,7 @@
     background: url(../images/index/area/i_cesuo_1.png) no-repeat;
     top:68px;
     left: 120px;
+    cursor: not-allowed;
 }
 .area-map .washroom1 span{
     top: 3px;
@@ -370,6 +377,7 @@
     background: url(../images/index/area/i_cesuo_2.png) no-repeat;
     top:100px;
     left: 105px;
+    cursor: not-allowed;
 }
 .area-map .area1{
     width: 92px;
@@ -423,6 +431,7 @@
     background: url(../images/index/area/i_004.png) no-repeat;
     top: 41px;
     left: 277px;
+    cursor: not-allowed;
 }
 
 .area-map .area4 span{
@@ -468,6 +477,7 @@
     background: url(../images/index/area/i_007.png) no-repeat;
     top: 48px;
     left: 424px;
+    cursor: not-allowed;
 }
 
 .area-map .area7 span{
@@ -481,6 +491,7 @@
     background: url(../images/index/area/i_007.png) no-repeat;
     top: 49px;
     left: 485px;
+    cursor: not-allowed;
 }
 
 .area-map .area8 span{
@@ -608,10 +619,13 @@
     background: linear-gradient(left, #152a5d, #41628f, #1e416b);
 }
 
+.body-wrap{
+    height: 412px;
+}
+
 .case-main .case-detail .head > li,
 .case-main .case-detail .body > li {
     float: left;
-
     font-size: 18px;
     color: #f8f8f8;
     text-align: center;
@@ -625,7 +639,7 @@
 .case-main .case-detail .body{
     height: 93px;
     background: #253957;
-    margin-top: 10px;
+    /*margin-top: 10px;*/
 }
 .case-main .case-detail .body:first-child{
     height: 93px;
@@ -689,6 +703,7 @@
 .body .handingman{
     position: relative;
     height: 93px;
+    overflow: hidden;
 }
 .body .handingman ul{
     width: 140px;
