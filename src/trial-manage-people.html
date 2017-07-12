@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>审讯管理-人身检查</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/trail-manage.css">
+    <link rel="stylesheet" href="./css/sign.css">
+</head>
+<body>
+<div class="header">
+    办案区智能集控中心
+</div>
+<ul class="nav">
+    <li class="line"></li>
+    <li>当前位置&nbsp;:</li>
+    <li>执法监督平台</li>
+    <li>&gt</li>
+    <li>办案区智能集控中心</li>
+    <li>&gt</li>
+    <li>审讯管理</li>
+    <li>&gt</li>
+    <li>人身检查</li>
+</ul>
+<div class="content">
+    <div class="flow-wrap">
+        <ul class="flow">
+            <li class="green">
+                <div class="bg register"></div>
+                <div class="message">
+                    <div class="title">入区登记</div>
+                    <div class="time">2Hrs13Mins</div>
+                </div>
+            </li>
+            <li class="red">
+                <div class="bg check"></div>
+                <div class="message">
+                    <div class="title">人身检查</div>
+                    <div class="time">5Mins</div>
+                </div>
+            </li>
+            <li class="gray">
+                <div class="bg property"></div>
+                <div class="message">
+                    <div class="title">财物存管</div>
+                    <div class="time">2Hrs13Mins</div>
+                </div>
+            </li>
+            <li class="gray">
+                <div class="bg information"></div>
+                <div class="message">
+                    <div class="title">信息采集</div>
+                    <div class="time">2Hrs13Mins</div>
+                </div>
+            <li class="gray">
+                <div class="bg waitingRoom"></div>
+                <div class="message">
+                    <div class="title">候问管理</div>
+                    <div class="time">2Hrs13Mins</div>
+                </div>
+            </li>
+            <li class="gray">
+                <div class="bg requireRoom"></div>
+                <div class="message">
+                    <div class="title">讯/询问管理</div>
+                    <div class="time">2Hrs13Mins</div>
+                </div>
+            </li>
+            <li class="gray">
+                <div class="bg return"></div>
+                <div class="message">
+                    <div class="title">物品返还</div>
+                    <div class="time">2Hrs13Mins</div>
+                </div>
+            </li>
+            <li class="gray">
+                <div class="bg exitRegister"></div>
+                <div class="message">
+                    <div class="title">出区登记</div>
+                    <div class="time">2Hrs13Mins</div>
+                </div>
+            </li>
+        </ul>
+        <div class="progress-wrap">
+            <div class="progress active">
+                <div class="progress-bar  progress-bar-info progress-bar-striped"
+                     role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"
+                     style="width: 80%">
+                </div>
+            </div>
+            <span class="total-time">总耗时4 Hrs 36 Mins</span>
+        </div>
+    </div>
+    <div class="check-body">
+        <div class="title">
+            <div>人身检查</div>
+        </div>
+        <div class="info">
+            <ul class="target">
+                <li>对&nbsp;&nbsp;&nbsp;象：</li>
+                <li>王大峰</li>
+                <li>420111197804125461</li>
+                <li>男</li>
+                <li>31岁</li>
+            </ul>
+            <ul class="handle">
+                <li>办案人：</li>
+                <li>黄小松</li>
+                <li>王欢</li>
+            </ul>
+        </div>
+        <div class="photo">
+            <img src="" alt="">
+        </div>
+        <ul class="time">
+            <li>01</li>
+            <li>32</li>
+            <li>30</li>
+        </ul>
+    </div>
+    <div class="check-msg">
+        <div class="input-area">
+            <div class="title"><span>自述症状：</span>（既往病史、是否饮酒、是否患有传染性等疾病）</div>
+            <textarea name=""></textarea>
+            <div class="title"><span>检查情况：</span>（体表是否有伤痕、是否饮酒以及全身检查情况）</div>
+            <textarea name=""></textarea>
+        </div>
+        <div class="photo-wrap" id="signx"></div>
+    </div>
+    <div class="close-btn">结束本环节</div>
+</div>
+<script src="js/jquery.js"></script>
+<script src="js/jquery-sign.mini.js"></script>
+<script>
+
+  $.sign.bindSign('#signx');//初始化
+  // $.sign.setSignColor('#3498DB'); 设置标记框颜色
+  // $.sign.setBodyColor('rgba(255,255,255,0.5)'); 设置提示背景颜色
+  // $.sign.setFontColor('#000');//设置字体颜色
+
+  var data = [{left: 160, top: 27, message: "头"}, {left: 272, top: 348, message: "手"}];
+
+  $.sign.loadingSign(data);//载入标记数据
+
+  var m = $.sign.getSignMessage();//获取所有标记数据，返回为数组
+
+  $('.close-btn').click(function () {
+    console.log(m);
+    var msg = '';
+    for (var key in m) {
+      msg +=
+        `{
+        'left:', '${m[key].left}',
+        'top:','${m[key].top}',
+        'message:','${m[key].message}'
+        }`;
+    }
+    alert(`[${msg}]`);
+  });
+</script>
+
+</body>
+</html>
