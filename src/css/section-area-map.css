@@ -1,0 +1,260 @@
+@charset "utf-8";
+
+/*治安大队地图*/
+.case-main .case-area .area-zhian-map{
+    margin-top: 7px;
+    width: 917px;
+    height: 271px;
+    position: relative;
+    background: #2e4767 url(../images/index/zhian/z_dipan.png) no-repeat center;
+}
+.area-zhian-map .item{
+    position: absolute;
+    z-index: 10;
+    font-size: 10px;
+}
+.area-zhian-map .item span{
+    font-size: 10px;
+    position: absolute;
+}
+
+.area-zhian-map .area1{
+    width: 71px;
+    height: 71px;
+    background: url(../images/index/area/i_002_free.png) no-repeat;
+    top: 35px;
+    left: 129px;
+}
+.area-zhian-map .area1.active{
+    background: url(../images/index/area/i_002_busy.png) no-repeat;
+}
+.area-zhian-map .area1 span{
+    top: 10px;
+    left: 20px;
+}
+
+.area-zhian-map .area2{
+    width: 71px;
+    height: 71px;
+    background: url(../images/index/zhian/z_002_free.png) no-repeat;
+    top: 36px;
+    left: 193px;
+}
+.area-zhian-map .area2.active{
+    background: url(../images/index/zhian/z_002_busy.png) no-repeat;
+}
+.area-zhian-map .area2 span{
+    top: 4px;
+    left: 10px;
+}
+
+.area-zhian-map .area3 {
+    width: 71px;
+    height: 71px;
+    background: url(../images/index/area/i_002_free.png) no-repeat;
+    top: 37px;
+    left: 249px;
+}
+
+.area-zhian-map .area3.active{
+    background: url(../images/index/area/i_002_busy.png) no-repeat;
+}
+
+.area-zhian-map .area3 span{
+    top: 10px;
+    left: 20px;
+}
+
+.area-zhian-map .area4 {
+    width: 71px;
+    height: 71px;
+    background: url(../images/index/area/i_002_free.png) no-repeat;
+    top: 37px;
+    left: 308px;
+}
+
+.area-zhian-map .area4.active{
+    background: url(../images/index/area/i_002_busy.png) no-repeat;
+}
+
+.area-zhian-map .area4 span{
+    top: 10px;
+    left: 20px;
+}
+
+.area-zhian-map .area5 {
+    width: 71px;
+    height: 71px;
+    background: url(../images/index/area/i_002_free.png) no-repeat;
+    top: 37px;
+    left: 367px;
+}
+
+.area-zhian-map .area5.active{
+    background: url(../images/index/area/i_002_busy.png) no-repeat;
+}
+
+.area-zhian-map .area5 span{
+    top: 10px;
+    left: 20px;
+}
+
+.area-zhian-map .area6 {
+    width: 71px;
+    height: 71px;
+    background: url(../images/index/area/i_002_free.png) no-repeat;
+    top: 37px;
+    left: 425px;
+}
+
+.area-zhian-map .area6.active{
+    background: url(../images/index/area/i_002_busy.png) no-repeat;
+}
+
+.area-zhian-map .area6 span{
+    top: 10px;
+    left: 20px;
+}
+
+.area-zhian-map .area7 {
+    width: 71px;
+    height: 71px;
+    background: url(../images/index/area/i_002_free.png) no-repeat;
+    top: 37px;
+    left: 484px;
+}
+
+.area-zhian-map .area7.active{
+    background: url(../images/index/area/i_002_busy.png) no-repeat;
+}
+
+.area-zhian-map .area7 span{
+    top: 10px;
+    left: 20px;
+}
+
+.area-zhian-map .area8 {
+    width: 71px;
+    height: 71px;
+    background: url(../images/index/area/i_002_free.png) no-repeat;
+    top: 37px;
+    left: 544px;
+}
+
+.area-zhian-map .area8.active{
+    background: url(../images/index/area/i_002_busy.png) no-repeat;
+}
+
+.area-zhian-map .area8 span{
+    top: 10px;
+    left: 20px;
+}
+
+.area-zhian-map .area9 {
+    width: 71px;
+    height: 71px;
+    background: url(../images/index/area/i_002_free.png) no-repeat;
+    top: 37px;
+    left: 604px;
+}
+
+.area-zhian-map .area9.active{
+    background: url(../images/index/area/i_002_busy.png) no-repeat;
+}
+
+.area-zhian-map .area9 span{
+    top: 10px;
+    left: 20px;
+}
+
+.area-zhian-map .area10 {
+    width: 71px;
+    height: 71px;
+    background: url(../images/index/zhian/z_002_free.png) no-repeat;
+    top: 37px;
+    left: 669px;
+}
+
+.area-zhian-map .area10.active{
+    background: url(../images/index/zhian/z_002_busy.png) no-repeat;
+}
+
+.area-zhian-map .area10 span{
+    top: 4px;
+    left: 10px;
+}
+
+.area-zhian-map .area11 {
+    width: 71px;
+    height: 71px;
+    background: url(../images/index/zhian/z_002_free.png) no-repeat;
+    top: 37px;
+    left: 727px;
+}
+
+.area-zhian-map .area11.active{
+    background: url(../images/index/zhian/z_002_busy.png) no-repeat;
+}
+
+.area-zhian-map .area11 span{
+    top: 4px;
+    left: 10px;
+}
+
+.area-zhian-map .area12{
+    width: 71px;
+    height: 71px;
+    background: url(../images/index/area/i_002_free.png) no-repeat;
+    top: 137px;
+    left: 102px;
+}
+.area-zhian-map .area12.active{
+    background: url(../images/index/area/i_002_busy.png) no-repeat;
+}
+.area-zhian-map .area12 span{
+    top: 10px;
+    left: 20px;
+}
+
+.area-zhian-map .area13{
+    width: 71px;
+    height: 71px;
+    background: url(../images/index/area/i_002_free.png) no-repeat;
+    top: 137px;
+    left: 163px;
+}
+.area-zhian-map .area13.active{
+    background: url(../images/index/area/i_002_busy.png) no-repeat;
+}
+.area-zhian-map .area13 span{
+    top: 10px;
+    left: 20px;
+}
+
+.area-zhian-map .area14{
+    width: 71px;
+    height: 71px;
+    background: url(../images/index/area/i_002_free.png) no-repeat;
+    top: 139px;
+    left: 224px;
+}
+.area-zhian-map .area14.active{
+    background: url(../images/index/area/i_002_busy.png) no-repeat;
+}
+.area-zhian-map .area14 span{
+    top: 10px;
+    left: 20px;
+}
+
+.area-zhian-map .area15{
+    width: 188px;
+    height: 71px;
+    background: url(../images/index/zhian/z_015.png) no-repeat;
+    top: 139px;
+    left: 524px;
+}
+
+.area-zhian-map .area15 span{
+    top: 20px;
+    left: 70px;
+}

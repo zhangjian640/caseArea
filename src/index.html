@@ -6,20 +6,21 @@
     <title>武汉公安办案区管理平台</title>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/section-area-map.css">
     <link rel="stylesheet" href="./css/swiper.min.css">
     <link rel="stylesheet" href="./css/jquery.datetimepicker.css">
 </head>
 <body>
-    <div class="header">
-        <div class="logo">
-            <img src="./images/logo.png" alt="logo">
-        </div>
-        <div class="title1">
-            <img src="./images/header_title1.png" alt="">
-        </div>
-        <div class="title2">
-            <img class="title2" src="./images/header_title2.png" alt="">
-        </div>
+<div class="header">
+    <div class="logo">
+        <img src="./images/logo.png" alt="logo">
+    </div>
+    <div class="title1">
+        <img src="./images/header_title1.png" alt="">
+    </div>
+    <div class="title2">
+        <img class="title2" src="./images/header_title2.png" alt="">
+    </div>
 </div>
 <div class="content">
     <div class="aside">
@@ -54,8 +55,10 @@
                 </li>
             </ul>
             <ul class="use-count">
-                <li>使用中：<img class="icon-useing" src="./images/index/icon_using.png"><span class="useing-num">5</span></li>
-                <li>未使用：<img class="icon-nouse" src="./images/index/icon_nouse.png"><span class="nouse-num">4</span></li>
+                <li>使用中：<img class="icon-useing" src="./images/index/icon_using.png"><span
+                        class="useing-num">5</span></li>
+                <li>未使用：<img class="icon-nouse" src="./images/index/icon_nouse.png"><span class="nouse-num">4</span>
+                </li>
             </ul>
         </div>
         <div class="warn">
@@ -134,57 +137,14 @@
             <div class="area-wrap">
                 <ul class="area-title">
                     <li class="icon"></li>
-                    <li class="title">武汉交警醉驾办案中心</li>
+                    <li class="title"></li>
                     <li class="time">当前时间</li>
                     <li class="time-wrap">
                         <input type="text" value="" id="datetimepicker"/>
                     </li>
                     <li class="scale"></li>
                 </ul>
-                <ul class="area-map">
-                    <li class="item washroom1">
-                        <span>厕所</span>
-                    </li>
-                    <li class="item washroom2">
-                        <span>厕所</span>
-                    </li>
-                    <li class="item area1 active">
-                        <span>候问室</span>
-                    </li>
-                    <li class="item area2">
-                        <span>询问室<br>001</span>
-                    </li>
-                    <li class="item area3 active">
-                        <span>询问室002</span>
-                    </li>
-                    <li class="item area4">
-                        <span>机房</span>
-                    </li>
-                    <li class="item area5">
-                        <span>信息<br>采集室</span>
-                    </li>
-                    <li class="item area6 active">
-                        <span>询问室<br>003</span>
-                    </li>
-                    <li class="item area7">
-                        <span>办公室</span>
-                    </li>
-                    <li class="item area8">
-                        <span>办公室</span>
-                    </li>
-                    <li class="item area9 active">
-                        <span>询问室<br>004</span>
-                    </li>
-                    <li class="item area10">
-                        <span>询问室<br>005</span>
-                    </li>
-                    <li class="item area11 active">
-                        <span>询问室<br>006</span>
-                    </li>
-                    <li class="item area12">
-                        <span>询问室<br>007</span>
-                    </li>
-                </ul>
+                <div class="map-container"></div>
             </div>
             <div class="area-video">
                 <div class="title">行为识别雷达图</div>
@@ -216,7 +176,9 @@
                         <li class="warning">
                             <span>20%</span>
                             <div class="progress active">
-                                <div class="progress-bar  progress-bar-info progress-bar-striped" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 80%"></div>
+                                <div class="progress-bar  progress-bar-info progress-bar-striped" role="progressbar"
+                                     aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"
+                                     style="width: 80%"></div>
                             </div>
                         </li>
                         <li class="time-left">2小时29分钟</li>
@@ -240,7 +202,9 @@
                         <li class="warning">
                             <span>20%</span>
                             <div class="progress active">
-                                <div class="progress-bar  progress-bar-warning progress-bar-striped" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 80%"></div>
+                                <div class="progress-bar  progress-bar-warning progress-bar-striped"
+                                     role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"
+                                     style="width: 80%"></div>
                             </div>
                         </li>
                         <li class="time-left">2小时29分钟</li>
@@ -264,7 +228,9 @@
                         <li class="warning">
                             <span>20%</span>
                             <div class="progress active">
-                                <div class="progress-bar  progress-bar-danger progress-bar-striped" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 80%"></div>
+                                <div class="progress-bar  progress-bar-danger progress-bar-striped"
+                                     role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"
+                                     style="width: 80%"></div>
                             </div>
                         </li>
                         <li class="time-left">2小时29分钟</li>
@@ -288,7 +254,9 @@
                         <li class="warning">
                             <span>20%</span>
                             <div class="progress active">
-                                <div class="progress-bar  progress-bar-danger progress-bar-striped" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 80%"></div>
+                                <div class="progress-bar  progress-bar-danger progress-bar-striped"
+                                     role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"
+                                     style="width: 80%"></div>
                             </div>
                         </li>
                         <li class="time-left">2小时29分钟</li>
@@ -306,52 +274,70 @@
                     </ul>
                 </ul>
             </div>
-
         </div>
     </div>
 </div>
-    <script src="./js/jquery.js"></script>
-    <script src="./js/swiper.jquery.min.js"></script>
-    <script src="./js/jquery.datetimepicker.full.min.js"></script>
-    <script>
-        // 时间控件
-      $.datetimepicker.setLocale('zh');
-      $('#datetimepicker').datetimepicker({
-        dayOfWeekStart : 1,
-        format:'Y-m-d h:s',
-        formatDate:'Y-m-d',
-        lang:'zh',
-        startDate:	'2017/01/01'
-      });
+<script src="./js/jquery.js"></script>
+<script src="./js/swiper.jquery.min.js"></script>
+<script src="./js/jquery.datetimepicker.full.min.js"></script>
+<script>
 
-      // 在审案件滚动
-        var caseSwiper = new Swiper('.body-wrap', {
-          autoplayDisableOnInteraction : false, //用户操作swiper之后，是否禁止autoplay。默认为true：停止。
-          slidesPerView: 4,
-          spaceBetween: 10,
-          direction: 'vertical',
-          loop: true,
-          autoplay: 3500
-        });
+  // 加载地图
+  $(function () {
 
-        // 预警报警滚动
-        var caseSwiper = new Swiper('.warn-content', {
-          autoplayDisableOnInteraction : false,
-          direction: 'vertical',
-          loop: true,
-          effect : 'cube',
-          autoplay: 4000
-        });
+    var a = 1;
 
-        // 民警调度公告
-        var scheduleSwiper = new Swiper('.schedule-content', {
-          autoplayDisableOnInteraction : false,
-          direction: 'vertical',
-          loop: true,
-          effect : 'flip',
-          autoplay: 3000
-        });
+    if (a === 0) {
+      //醉驾
+      $('.map-container').load('./layout/zuijia.html');
+      $('.area-title .title').text('武汉交警醉驾办案中心');
+    }
 
-    </script>
+    if (a === 1) {
+      // 治安
+      $('.map-container').load('./layout/zhian.html');
+      $('.area-title .title').text('武汉市公安局治安管理局');
+    }
+
+  });
+
+  $.datetimepicker.setLocale('zh');
+  $('#datetimepicker').datetimepicker({
+    dayOfWeekStart: 1,
+    format: 'Y-m-d h:s',
+    formatDate: 'Y-m-d',
+    lang: 'zh',
+    startDate: '2017/01/01'
+  });
+
+  // 在审案件滚动
+  var caseSwiper = new Swiper('.body-wrap', {
+    autoplayDisableOnInteraction: false, //用户操作swiper之后，是否禁止autoplay。默认为true：停止。
+    slidesPerView: 4,
+    spaceBetween: 10,
+    direction: 'vertical',
+    loop: true,
+    autoplay: 3500
+  });
+
+  // 预警报警滚动
+  var caseSwiper = new Swiper('.warn-content', {
+    autoplayDisableOnInteraction: false,
+    direction: 'vertical',
+    loop: true,
+    effect: 'cube',
+    autoplay: 4000
+  });
+
+  // 民警调度公告
+  var scheduleSwiper = new Swiper('.schedule-content', {
+    autoplayDisableOnInteraction: false,
+    direction: 'vertical',
+    loop: true,
+    effect: 'flip',
+    autoplay: 3000
+  });
+
+</script>
 </body>
 </html>
