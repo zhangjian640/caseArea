@@ -1,0 +1,69 @@
+.content .collection {
+    width: 786px;
+    margin: 40px auto 0;
+}
+
+.content .collection table {
+    width: 100%;
+}
+
+.content .collection table tr {
+    height: 66px;
+    line-height: 66px;
+    border-bottom: 2px dashed #c9c9c9;
+    font-size: 20px;
+}
+
+.content .collection table tr td {
+    color: #909090;
+}
+
+.content .collection table td label {
+    margin: 0 18px;
+}
+
+.content .collection table input[type="radio"],
+.content .collection table input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+}
+
+.content .collection table tr td:first-child {
+    color: #565656;
+}
+
+.content .close-btn {
+    margin-top: 20px;
+}
+
+.content .collection .code input {
+    line-height: 30px;
+    font-size: 16px;
+    width: 98%;
+}
+
+.content .end-btn {
+    width: 205px;
+    height: 205px;
+    margin: 45px auto;
+    background: url(../images/trial/btn_jieshu2.png) no-repeat;
+    cursor: pointer;
+    position: relative;
+}
+.content .end-btn .msg{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    font-size: 30px;
+    color: #0d63c3;
+}
+
+.content .end-btn:hover {
+    background: url(../images/trial/btn_jieshu2_hover.png) no-repeat;
+}
+
+.content .end-btn:hover .msg{
+    color: #ff6b11;
+}

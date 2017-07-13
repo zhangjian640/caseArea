@@ -3,6 +3,7 @@
 body {
     background: none;
     color: #000;
+    overflow-x: hidden;
 }
 
 .header {
@@ -368,7 +369,7 @@ body {
 }
 
 .check-body .info .handle {
-    height: 30px;
+    height: 32px;
     margin-top: 10px;
     overflow: hidden;
 }
@@ -416,7 +417,15 @@ body {
     height: 134px;
     border: 1px solid #c9e2ff;
 }
-.check-body .time{
+.check-body .photo span{
+    width: 20px;
+    display: block;
+    margin: 35% auto;
+    font-size: 20px;
+    text-align: center;
+    color: gray;
+}
+.check-body .timing{
     width: 304px;
     height: 76px;
     margin-top: 62px;
@@ -424,23 +433,18 @@ body {
     overflow: hidden;
     background: url(../images/trial/jishi_bg.png) no-repeat;
 }
-.check-body .time li{
+.check-body .timing li{
     float: left;
+    width: 83px;
     color: #fff;
     line-height: 76px;
     font-size: 56px;
     font-weight: bold;
+    margin-left: 27px;
+    text-align: center;
 }
-.check-body .time li:first-child{
-    padding-left: 12px;
-}
-
-.check-body .time li + li{
-    padding-left: 46px;
-}
-
-.check-body .time li + li + li{
-    padding-left: 48px;
+.check-body .timing li:first-child{
+    margin-left: 0;
 }
 
 .content .check-msg{
@@ -491,4 +495,11 @@ body {
 .content .close-btn:hover{
     background: url(../images/trial/btn_jieshu_hover.png) no-repeat;
 
+}
+
+.shade{
+    width: 575px;
+    height: 563px;
+    background: rgba(100, 100, 100, 0.5);
+    z-index: 100;
 }

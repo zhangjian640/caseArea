@@ -1,0 +1,93 @@
+@charset "utf-8";
+
+body{
+    overflow-x: hidden;
+    background: url(../images/login/body_bg.jpg) no-repeat;
+}
+.wrapper{
+    width: 850px;
+    margin: 392px auto 0;
+}
+.header{
+    width: 840px;
+    height: 65px;
+    background: url(../images/login/title.png);
+}
+
+.container{
+    width: 582px;
+    height: 380px;
+    margin: 17px auto 0;
+    position: relative;
+    background: url(../images/login/login_bg.png);
+}
+
+.container .logo{
+    width: 200px;
+    height: 95px;
+    margin: auto;
+    position: absolute;
+    top: 36px;
+    left: 50%;
+    margin-left: -100px;
+    background: url(../images/login/logo_yan.png);
+}
+
+.container .user {
+    width: 326px;
+    height: 35px;
+    margin: auto;
+    position: absolute;
+    top: 153px;
+    left: 50%;
+    margin-left: -163px;
+    background: url(../images/login/user.png);
+}
+
+.container .password {
+    width: 326px;
+    height: 35px;
+    margin: auto;
+    position: absolute;
+    top:208px;
+    left: 50%;
+    margin-left: -163px;
+    background: url(../images/login/password.png);
+}
+
+.container .user input,
+.container .password input {
+    width: 200px;
+    height: 35px;
+    position: absolute;
+    left: 64px;
+    background: transparent;
+    border: none;
+    font-size: 16px;
+    color: #fff;
+    text-indent: 10px;
+    line-height: 35px;
+}
+
+.container .login {
+    width: 432px;
+    height: 43px;
+    margin: auto;
+    top: 281px;
+    position: absolute;
+    left: 50%;
+    margin-left: -216px;
+    background: url(../images/login/btn_login.png);
+    cursor: pointer;
+}
+
+.container .login:hover{
+    background: url(../images/login/btn_login_hover.png);
+}
+
+.wrapper .right {
+    width: 432px;
+    height: 12px;
+    margin: 133px auto 0;
+    background: url(../images/login/banquan_shuoming.png);
+}

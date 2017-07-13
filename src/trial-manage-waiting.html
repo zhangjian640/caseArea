@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>审讯管理-人身检查</title>
+    <title>审讯管理-候问管理</title>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/trail-manage.css">
-    <link rel="stylesheet" href="./css/sign.css">
+    <link rel="stylesheet" href="./css/trail-manage-info.css">
     <script src="./js/timing.js"></script>
 </head>
 <body>
@@ -21,7 +21,7 @@
     <li>&gt</li>
     <li>审讯管理</li>
     <li>&gt</li>
-    <li>人身检查</li>
+    <li>候问管理</li>
 </ul>
 <div class="content">
     <div class="flow-wrap">
@@ -33,7 +33,7 @@
                     <div class="time">2Hrs13Mins</div>
                 </div>
             </li>
-            <li class="red">
+            <li class="green">
                 <div class="bg check"></div>
                 <div class="message">
                     <div class="title">人身检查</div>
@@ -47,13 +47,13 @@
                     <div class="time">2Hrs13Mins</div>
                 </div>
             </li>
-            <li class="gray">
+            <li class="green">
                 <div class="bg information"></div>
                 <div class="message">
                     <div class="title">信息采集</div>
                     <div class="time">2Hrs13Mins</div>
                 </div>
-            <li class="gray">
+            <li class="red">
                 <div class="bg waitingRoom"></div>
                 <div class="message">
                     <div class="title">候问管理</div>
@@ -94,7 +94,7 @@
     </div>
     <div class="check-body">
         <div class="title">
-            <div>人身检查</div>
+            <div>候问管理</div>
         </div>
         <div class="info">
             <ul class="target">
@@ -119,49 +119,27 @@
             <li id="second">00</li>
         </ul>
     </div>
-    <div class="check-msg">
-        <div class="input-area">
-            <div class="title"><span>自述症状：</span>（既往病史、是否饮酒、是否患有传染性等疾病）</div>
-            <textarea name=""></textarea>
-            <div class="title"><span>检查情况：</span>（体表是否有伤痕、是否饮酒以及全身检查情况）</div>
-            <textarea name=""></textarea>
-        </div>
-        <div class="photo-wrap" id="signx">
-            <!--<div class="shade">-->
-                <!--<div class="">开始标注（点击鼠标右键）</div>-->
-            <!--</div>-->
-        </div>
+    <div class="collection">
+        <table>
+            <tr>
+                <td width="32%">开始询问时间：</td>
+                <td>2017年7月12日&nbsp;10:24:12</td>
+            </tr>
+            <tr>
+                <td>活动内容/候问音视频编号：</td>
+                <td class="code">
+                    <input type="text" id="" name="">
+                </td>
+            </tr>
+        </table>
     </div>
-    <div class="close-btn">结束本环节</div>
+    <div class="end-btn">
+        <div class="msg">候问结束</div>
+    </div>
 </div>
+
 <script src="js/jquery.js"></script>
-<script src="js/jquery-sign.mini.js"></script>
 <script>
-
-  $.sign.bindSign('#signx');//初始化
-  // $.sign.setSignColor('#3498DB'); 设置标记框颜色
-  // $.sign.setBodyColor('rgba(255,255,255,0.5)'); 设置提示背景颜色
-  // $.sign.setFontColor('#000');//设置字体颜色
-
-//  var data = [{left: 160, top: 27, message: "头"}, {left: 272, top: 348, message: "手"}];
-//
-//  $.sign.loadingSign(data);//载入标记数据
-
-  var m = $.sign.getSignMessage();//获取所有标记数据，返回为数组
-
-  $('.close-btn').click(function () {
-    console.log(m);
-    var msg = '';
-    for (var key in m) {
-      msg +=
-        `{
-        'left:', '${m[key].left}',
-        'top:','${m[key].top}',
-        'message:','${m[key].message}'
-        }`;
-    }
-    alert(`[${msg}]`);
-  });
 </script>
 
 </body>
