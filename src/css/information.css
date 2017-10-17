@@ -1,0 +1,74 @@
+body {
+    background: url(../images/index/bg.png);
+}
+
+.content {
+    width: 1026px;
+    padding: 20px;
+    min-height: 728px;
+    position: relative;
+    left: 0;
+    right: 0;
+    margin: 50px auto;
+    background: url(../images/download_bg_s.png) repeat-y;
+    border: 18px solid #102947;
+    color: #000;
+}
+
+.info-title{
+    width: 100%;
+    height: 36px;
+    position: relative;
+}
+
+.info-title .title {
+    position: absolute;
+    text-align: center;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    color: #fe5026;
+    font-size: 24px;
+    background: url(../images/download_bg_s.png) -20px repeat-y;
+    z-index: 10;
+}
+
+.info-title .title {
+    width: 145px;
+}
+
+.info-title .info-line{
+    height: 2px;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    top: 16px;
+    left: 5px;
+    background: url(../images/title-line.png) no-repeat;
+}
+
+.info-table table {
+    width: 98%;
+    margin: 20px auto;
+    background: #d3dfed;
+}
+
+.info-table thead tr th,
+.info-table tbody tr td {
+    border: 2px solid #fff;
+    padding: 0 10px;
+    color: #11365f;
+    text-indent: 20px;
+    text-indent: 20px;
+}
+
+.info-table th {
+    font-weight: bold;
+    line-height: 26px;
+}
+.info-table .table > thead > tr > th{
+    border-bottom: 2px solid #fff;
+}
+.info-table .table td {
+    line-height: 40px;
+}

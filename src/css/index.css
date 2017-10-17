@@ -91,7 +91,8 @@ body{
 .aside .situation .case-count {
     margin-top: 7px;
     padding-left: 20px;
-    height: 191px;
+    padding-top: 5px;
+    height: 197px;
     background: #16264a;
     font-size: 16px;
     color: #3c5b8b;
@@ -115,7 +116,7 @@ body{
 
 .aside .situation .use-count {
     margin-top: 1px;
-    height: 55px;
+    height: 68px;
     background: #1a2c4d;
     overflow: hidden;
     font-size: 0;
@@ -124,7 +125,7 @@ body{
 .aside .situation .use-count li {
     float: left;
     width: 50%;
-    line-height: 55px;
+    line-height: 68px;
     font-size: 14px;
     padding-left: 20px;
     box-sizing: border-box;
@@ -270,6 +271,7 @@ body{
 
 /*右侧区域*/
 .case-main {
+    min-width: 1523px;
     position: absolute;
     left: 382px;
 }
@@ -357,6 +359,89 @@ body{
     font-size: 10px;
     position: absolute;
 }
+
+@keyframes mark {
+    from{
+        -webkit-transform: scale(0.8);
+        -moz-transform: scale(0.8);
+        -ms-transform: scale(0.8);
+        -o-transform: scale(0.8);
+        transform: scale(0.8);
+    }
+    to {
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+        transform: scale(1);
+    }
+}
+@-webkit-keyframes mark {
+    from{
+        -webkit-transform: scale(0.8);
+        -moz-transform: scale(0.8);
+        -ms-transform: scale(0.8);
+        -o-transform: scale(0.8);
+        transform: scale(0.8);
+    }
+    to {
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+        transform: scale(1);
+    }
+}
+@-ms-keyframes mark {
+    from{
+        -webkit-transform: scale(0.8);
+        -moz-transform: scale(0.8);
+        -ms-transform: scale(0.8);
+        -o-transform: scale(0.8);
+        transform: scale(0.8);
+    }
+    to {
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+        transform: scale(1);
+    }
+}
+@-moz-keyframes mark {
+    from{
+        -webkit-transform: scale(0.8);
+        -moz-transform: scale(0.8);
+        -ms-transform: scale(0.8);
+        -o-transform: scale(0.8);
+        transform: scale(0.8);
+    }
+    to {
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+.map-container .item .mark{
+    position: absolute;
+    width: 50px;
+    height: 65px;
+    top: -30px;
+    left:50%;
+    margin-left: -16px;
+    background: url(../images/index/map_biaoji.png) no-repeat;
+    background-size: 60%;
+    font-size: 16px;
+    padding-left: 15px;
+    animation: mark 2s ease-out infinite;
+    -webkit-animation: mark 2s ease-out infinite;
+    -ms-animation: mark 2s ease-out infinite;
+    -moz-animation: mark 2s ease-out infinite;
+}
+
 .area-map .washroom1{
     width: 34px;
     height: 34px;
@@ -367,11 +452,11 @@ body{
 }
 .area-map .washroom1 span{
     top: 3px;
-    left: 6px;
+    left: 8px;
 }
 .area-map .washroom2 span{
     top: 3px;
-    left: 6px;
+    left: 8px;
 }
 .area-map .washroom2{
     width: 34px;
@@ -397,20 +482,23 @@ body{
 }
 
 .area-map .area2{
-    width: 71px;
-    height: 71px;
-    background: url(../images/index/area/i_002_free.png) no-repeat;
-    top: 41px;
-    left: 218px;
+    width: 92px;
+    height: 130px;
+    background: url(../images/index/area/i_001_free.png) no-repeat;
+    top: 43px;
+    left: 197px;
 }
 .area-map .area2.active{
-    background: url(../images/index/area/i_002_busy.png) no-repeat;
+    background: url(../images/index/area/i_001_busy.png) no-repeat;
 }
 .area-map .area2 span{
     top: 13px;
-    left: 19px;
+    left: 23px;
 }
-
+.area-map .area2 span i{
+    text-indent: 20px;
+    display: block;
+}
 .area-map .area3 {
     width: 71px;
     height: 71px;
@@ -585,35 +673,39 @@ body{
     position: absolute;
 }
 
-.case-main .case-detail{
-
+.case-detail{
+    position: relative;
+    top: 362px;
+    margin: 0 15px;
+    -webkit-box-shadow: 0 10px 10px #0e1926;
+    box-shadow: 0 10px 10px #0e1926;
 }
-.case-main .case-detail .title-wrap{
+.case-detail .title-wrap{
     height: 96px;
     overflow: hidden;
     background: #2481ce;
 }
 
-.case-main .case-detail .title-wrap .icon{
+.case-detail .title-wrap .icon{
     width: 96px;
     height: 96px;
     float: left;
     background: url(../images/index/icon_case_inded.png) no-repeat center;
 }
-.case-main .case-detail .title-wrap .title{
+.case-detail .title-wrap .title{
     float: left;
     height: 96px;
     line-height: 96px;
     font-size: 30px;
 }
 
-.case-main .case-detail .title-wrap .arrow{
+.case-detail .title-wrap .arrow{
     width: 96px;
     height: 96px;
     float: right;
     background: url(../images/index/icon_arrow_right.png) no-repeat center;
 }
-.case-main .case-detail .head{
+.case-detail .head{
     height: 68px;
     overflow: hidden;
     background: -moz-linear-gradient(left, #41628f, #1e416b);
@@ -625,61 +717,59 @@ body{
     height: 412px;
 }
 
-.case-main .case-detail .head > li,
-.case-main .case-detail .body > li {
+.case-detail .head > li,
+.case-detail .body > li {
     float: left;
     font-size: 18px;
     color: #f8f8f8;
     text-align: center;
 }
-.case-main .case-detail .head > li{
+.case-detail .head > li{
     line-height: 68px;
 }
-.case-main .case-detail .body > li{
+.case-detail .body > li{
     line-height: 93px;
 }
-.case-main .case-detail .body{
+.case-detail .body{
     height: 93px;
     background: #253957;
     /*margin-top: 10px;*/
 }
-.case-main .case-detail .body:first-child{
+.case-detail .body:first-child{
     height: 93px;
     background: #253957;
     margin-top: 0;
 }
 .case-detail .head > li:nth-child(1),
 .case-detail .body > li:nth-child(1) {
-    width: 167px;
+    width: 195px;
     border-top-left-radius: 4px;
     border-bottom-left-radius: 4px;
 }
 .case-detail .head > li:nth-child(2),
 .case-detail .body > li:nth-child(2) {
-    width: 244px;
+    width: 298px;
 }
 .case-detail .head > li:nth-child(3),
 .case-detail .body > li:nth-child(3) {
-    width: 202px;
+    width: 260px;
 }
 .case-detail .head > li:nth-child(4),
 .case-detail .body > li:nth-child(4) {
-    width: 190px;
-    text-align: left;
-    padding-left: 20px;
+    width: 200px;
     box-sizing: border-box;
 }
 .case-detail .head > li:nth-child(5),
 .case-detail .body > li:nth-child(5) {
-    width: 318px;
+    width: 484px;
 }
 .case-detail .head > li:nth-child(6),
 .case-detail .body li:nth-child(6) {
-    width: 171px;
+    width: 216px;
 }
 .case-detail .head > li:nth-child(7),
 .case-detail .body > li:nth-child(7) {
-    width: 200px;
+    width: 230px;
 }
 .case-detail .body .blue{
     background: url(../images/index/icon_blue.png) no-repeat;
@@ -690,17 +780,26 @@ body{
 .case-detail .body .red{
     background: url(../images/index/icon_red.png) no-repeat;
 }
-
-.case-detail .body .stage.yellow{
-    background: url(../images/index/icon_stage_warning.png) no-repeat 100px center;
+.stage-icon {
+    width: 51px;
+    height: 45px;
+    display: inline-block;
 }
 
-.case-detail .body .stage.red1{
-    background: url(../images/index/icon_stage_danger1.png) no-repeat 100px center;
+.case-detail .body .warning .warning-text{
+    color: #ff0000;
 }
 
-.case-detail .body .stage.red2{
-    background: url(../images/index/icon_stage_danger2.png) no-repeat 100px center;
+.case-detail .body .warning.yellow{
+    background: url(../images/index/icon_stage_warning.png) no-repeat 0 center;
+}
+
+.case-detail .body .warning.red1{
+    background: url(../images/index/icon_stage_danger1.png) no-repeat 0 center;
+}
+
+.case-detail .body .warning.red2{
+    background: url(../images/index/icon_stage_danger2.png) no-repeat 0 center;
 }
 .body .handingman{
     position: relative;

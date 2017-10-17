@@ -1,0 +1,100 @@
+@charset "utf-8";
+
+/*荆门市*/
+.case-main .case-area .area-xianning-henggouqiao-map {
+    margin-top: 7px;
+    width: 917px;
+    height: 271px;
+    position: relative;
+    background: #2e4767 url(../images/index/xianning/henggouqiao/xianning-henggouqiao-dipan.png) no-repeat center;
+}
+
+.area-xianning-henggouqiao-map .item {
+    position: absolute;
+    z-index: 10;
+}
+
+.area-xianning-henggouqiao-map .area1 {
+    width: 228px;
+    height: 74px;
+    background: url(../images/index/xianning/henggouqiao/xws2.png) no-repeat;
+    top: 34px;
+    left: 113px;
+}
+
+.area-xianning-henggouqiao-map .area1.active {
+    background: url(../images/index/xianning/henggouqiao/xws2_busy.png) no-repeat;
+}
+
+
+.area-xianning-henggouqiao-map .area2 {
+    width: 190px;
+    height: 74px;
+    background: url(../images/index/xianning/henggouqiao/brs.png) no-repeat;
+    top: 36px;
+    left: 302px;
+}
+
+.area-xianning-henggouqiao-map .area2.active {
+    background: url(../images/index/xianning/henggouqiao/brs_busy.png) no-repeat;
+}
+
+.area-xianning-henggouqiao-map .area3 {
+    width: 142px;
+    height: 60px;
+    background: url(../images/index/xianning/henggouqiao/hsw2.png) no-repeat;
+    top: 36px;
+    left: 495px;
+}
+
+.area-xianning-henggouqiao-map .area3.active {
+    background: url(../images/index/xianning/henggouqiao/hsw2_busy.png) no-repeat;
+}
+
+.area-xianning-henggouqiao-map .area4 {
+    width: 142px;
+    height: 60px;
+    background: url(../images/index/xianning/henggouqiao/hsw1.png) no-repeat;
+    top: 38px;
+    left: 637px;
+}
+
+.area-xianning-henggouqiao-map .area4.active {
+    background: url(../images/index/xianning/henggouqiao/hsw1_busy.png) no-repeat;
+}
+
+.area-xianning-henggouqiao-map .area5 {
+    width: 228px;
+    height: 74px;
+    background: url(../images/index/xianning/henggouqiao/xws1.png) no-repeat;
+    top: 138px;
+    left: 64px;
+}
+
+.area-xianning-henggouqiao-map .area5.active {
+    background: url(../images/index/xianning/henggouqiao/xws1_busy.png) no-repeat;
+}
+
+.area-xianning-henggouqiao-map .area6 {
+    width: 228px;
+    height: 74px;
+    background: url(../images/index/xianning/henggouqiao/xunws2.png) no-repeat;
+    top: 139px;
+    left: 295px;
+}
+
+.area-xianning-henggouqiao-map .area6.active {
+    background: url(../images/index/xianning/henggouqiao/xunws2_busy.png) no-repeat;
+}
+
+.area-xianning-henggouqiao-map .area7 {
+    width: 228px;
+    height: 74px;
+    background: url(../images/index/xianning/henggouqiao/xunws1.png) no-repeat;
+    top: 140px;
+    left: 524px;
+}
+
+.area-xianning-henggouqiao-map .area7.active {
+    background: url(../images/index/xianning/henggouqiao/xunws1_busy.png) no-repeat;
+}

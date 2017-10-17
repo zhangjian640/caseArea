@@ -1,0 +1,240 @@
+@charset "utf-8";
+
+/*武汉市-青山分局*/
+.case-main .case-area .area-wuhan-qingshan-map {
+    margin-top: 7px;
+    width: 917px;
+    height: 271px;
+    position: relative;
+    background: #2e4767 url(../images/index/wuhan/qingshan/qingshan_bg.png) no-repeat center;
+}
+
+.area-wuhan-qingshan-map .item {
+    position: absolute;
+    z-index: 10;
+}
+
+.area-wuhan-qingshan-map .area1 {
+    width: 173px;
+    height: 37px;
+    background: url(../images/index/wuhan/qingshan/qingshan_xunws4_free.png) no-repeat;
+    top: 28px;
+    left: 166px;
+}
+
+.area-wuhan-qingshan-map .area1.active {
+    background: url(../images/index/wuhan/qingshan/qingshan_xunws4_busy.png) no-repeat;
+}
+
+
+.area-wuhan-qingshan-map .area2 {
+    width: 173px;
+    height: 37px;
+    background: url(../images/index/wuhan/qingshan/qingshan_xunws2_free.png) no-repeat;
+    top: 54px;
+    left: 152px;
+}
+
+.area-wuhan-qingshan-map .area2.active {
+    background: url(../images/index/wuhan/qingshan/qingshan_xunws2_busy.png) no-repeat;
+}
+
+.area-wuhan-qingshan-map .area3 {
+    width: 173px;
+    height: 37px;
+    background: url(../images/index/wuhan/qingshan/qingshan_xunws1_free.png) no-repeat;
+    top: 80px;
+    left: 140px;
+}
+
+.area-wuhan-qingshan-map .area3.active {
+    background: url(../images/index/wuhan/qingshan/qingshan_xunws1_busy.png) no-repeat;
+}
+
+.area-wuhan-qingshan-map .area4 {
+    width: 173px;
+    height: 37px;
+    background: url(../images/index/wuhan/qingshan/qingshan_jdjcs_free.png) no-repeat;
+    top: 109px;
+    left: 125px;
+}
+
+.area-wuhan-qingshan-map .area4.active {
+    background: url(../images/index/wuhan/qingshan/qingshan_jdjcs_busy.png) no-repeat;
+}
+
+.area-wuhan-qingshan-map .area5 {
+    width: 190px;
+    height: 74px;
+    background: url(../images/index/wuhan/qingshan/qingshan_hws_free.png) no-repeat;
+    top: 149px;
+    left: 93px;
+}
+
+.area-wuhan-qingshan-map .area5.active {
+    background: url(../images/index/wuhan/qingshan/qingshan_hws_busy.png) no-repeat;
+}
+
+.area-wuhan-qingshan-map .area6 {
+    width: 173px;
+    height: 37px;
+    background: url(../images/index/wuhan/qingshan/qingshan_xunws3_free.png) no-repeat;
+    top: 25px;
+    left: 378px;
+}
+
+.area-wuhan-qingshan-map .area6.active {
+    background: url(../images/index/wuhan/qingshan/qingshan_xunws3_busy.png) no-repeat;
+}
+
+.area-wuhan-qingshan-map .area7 {
+    width: 173px;
+    height: 37px;
+    background: url(../images/index/wuhan/qingshan/qingshan_xws6_free.png) no-repeat;
+    top: 51px;
+    left: 367px;
+}
+
+.area-wuhan-qingshan-map .area7.active {
+    background: url(../images/index/wuhan/qingshan/qingshan_xws6_busy.png) no-repeat;
+}
+
+.area-wuhan-qingshan-map .area8 {
+    width: 173px;
+    height: 37px;
+    background: url(../images/index/wuhan/qingshan/qingshan_xws5_free.png) no-repeat;
+    top: 77px;
+    left: 357px;
+}
+
+.area-wuhan-qingshan-map .area8.active {
+    background: url(../images/index/wuhan/qingshan/qingshan_xws5_busy.png) no-repeat;
+}
+
+.area-wuhan-qingshan-map .area9 {
+    width: 190px;
+    height: 44px;
+    background: url(../images/index/wuhan/qingshan/qingshan_aqyps_free.png) no-repeat;
+    top: 103px;
+    left: 345px;
+}
+
+.area-wuhan-qingshan-map .area9.active {
+    background: url(../images/index/wuhan/qingshan/qingshan_aqyps_busy.png) no-repeat;
+}
+
+.area-wuhan-qingshan-map .area10 {
+    width: 145px;
+    height: 48px;
+    background: url(../images/index/wuhan/qingshan/qingshan_jddt_free.png) no-repeat;
+    top: 99px;
+    left: 530px;
+}
+
+.area-wuhan-qingshan-map .area10.active {
+    background: url(../images/index/wuhan/qingshan/qingshan_jddt_busy.png) no-repeat;
+}
+
+.area-wuhan-qingshan-map .area11 {
+    width: 145px;
+    height: 48px;
+    background: url(../images/index/wuhan/qingshan/qingshan_rsaqjcs_free.png) no-repeat;
+    top: 99px;
+    left: 670px;
+}
+
+.area-wuhan-qingshan-map .area11.active {
+    background: url(../images/index/wuhan/qingshan/qingshan_rsaqjcs_busy.png) no-repeat;
+}
+
+.area-wuhan-qingshan-map .area12 {
+    width: 139px;
+    height: 38px;
+    background: url(../images/index/wuhan/qingshan/qingshan_xxcjs_free.png) no-repeat;
+    top: 137px;
+    left: 658px;
+}
+
+.area-wuhan-qingshan-map .area12.active {
+    background: url(../images/index/wuhan/qingshan/qingshan_xxcjs_busy.png) no-repeat;
+}
+
+.area-wuhan-qingshan-map .area13 {
+    width: 146px;
+    height: 51px;
+    background: url(../images/index/wuhan/qingshan/qingshan_jifang_free.png) no-repeat;
+    top: 167px;
+    left: 640px;
+}
+
+.area-wuhan-qingshan-map .area13.active {
+    background: url(../images/index/wuhan/qingshan/qingshan_jifang_busy.png) no-repeat;
+}
+
+.area-wuhan-qingshan-map .area14 {
+    width: 81px;
+    height: 53px;
+    background: url(../images/index/wuhan/qingshan/qingshan_wcnsxs_free.png) no-repeat;
+    top: 167px;
+    left: 562px;
+}
+
+.area-wuhan-qingshan-map .area14.active {
+    background: url(../images/index/wuhan/qingshan/qingshan_wcnsxs_busy.png) no-repeat;
+}
+
+
+.area-wuhan-qingshan-map .area15 {
+    width: 81px;
+    height: 53px;
+    background: url(../images/index/wuhan/qingshan/qingshan_xws1_free.png) no-repeat;
+    top: 168px;
+    left: 489px;
+    z-index: 14;
+}
+
+.area-wuhan-qingshan-map .area15.active {
+    background: url(../images/index/wuhan/qingshan/qingshan_xws1_busy.png) no-repeat;
+}
+
+
+.area-wuhan-qingshan-map .area16 {
+    width: 81px;
+    height: 53px;
+    background: url(../images/index/wuhan/qingshan/qingshan_xws2_free.png) no-repeat;
+    top: 169px;
+    left: 417px;
+    z-index: 13;
+}
+
+.area-wuhan-qingshan-map .area16.active {
+    background: url(../images/index/wuhan/qingshan/qingshan_xws2_busy.png) no-repeat;
+}
+
+
+.area-wuhan-qingshan-map .area17 {
+    width: 81px;
+    height: 53px;
+    background: url(../images/index/wuhan/qingshan/qingshan_xws3_free.png) no-repeat;
+    top: 170px;
+    left: 346px;
+    z-index: 12;
+}
+
+.area-wuhan-qingshan-map .area17.active {
+    background: url(../images/index/wuhan/qingshan/qingshan_xws3_busy.png) no-repeat;
+}
+
+
+.area-wuhan-qingshan-map .area18 {
+    width: 81px;
+    height: 53px;
+    background: url(../images/index/wuhan/qingshan/qingshan_brs_free.png) no-repeat;
+    top: 170px;
+    left: 275px;
+    z-index: 11;
+}
+
+.area-wuhan-qingshan-map .area18.active {
+    background: url(../images/index/wuhan/qingshan/qingshan_brs_busy.png) no-repeat;
+}

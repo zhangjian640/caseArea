@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>审讯管理-人身检查</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/trail-manage.css">
+    <link rel="stylesheet" href="./css/sign.css">
+    <link rel="stylesheet" href="./css/jedate.css">
+    <script src="./js/timing.js"></script>
+</head>
+<body>
+<div class="header">
+    办案区智能集控中心
+</div>
+<ul class="nav">
+    <li class="line"></li>
+    <li>当前位置&nbsp;:</li>
+    <li>执法监督平台</li>
+    <li>&gt</li>
+    <li>办案区智能集控中心</li>
+    <li>&gt</li>
+    <li>审讯管理</li>
+    <li>&gt</li>
+    <li>人身检查</li>
+</ul>
+<div class="content">
+    <div class="flow-wrap">
+        <ul class="flow">
+            <li class="green">
+                <div class="bg register"></div>
+                <div class="message">
+                    <div class="title">入区登记</div>
+                    <div class="time">2Hrs13Mins</div>
+                </div>
+            </li>
+            <li class="red">
+                <div class="bg check"></div>
+                <div class="message">
+                    <div class="title">人身检查</div>
+                    <div class="time">5Mins</div>
+                </div>
+            </li>
+            <li class="gray">
+                <div class="bg property"></div>
+                <div class="message">
+                    <div class="title">财物存管</div>
+                    <div class="time">2Hrs13Mins</div>
+                </div>
+            </li>
+            <li class="gray">
+                <div class="bg information"></div>
+                <div class="message">
+                    <div class="title">信息采集</div>
+                    <div class="time">2Hrs13Mins</div>
+                </div>
+            <li class="gray">
+                <div class="bg waitingRoom"></div>
+                <div class="message">
+                    <div class="title">候问管理</div>
+                    <div class="time">2Hrs13Mins</div>
+                </div>
+            </li>
+            <li class="gray">
+                <div class="bg requireRoom"></div>
+                <div class="message">
+                    <div class="title">讯/询问管理</div>
+                    <div class="time">2Hrs13Mins</div>
+                </div>
+            </li>
+            <li class="gray">
+                <div class="bg return"></div>
+                <div class="message">
+                    <div class="title">物品返还</div>
+                    <div class="time">2Hrs13Mins</div>
+                </div>
+            </li>
+            <li class="gray">
+                <div class="bg exitRegister"></div>
+                <div class="message">
+                    <div class="title">出区登记</div>
+                    <div class="time">2Hrs13Mins</div>
+                </div>
+            </li>
+        </ul>
+        <div class="progress-wrap">
+            <div class="progress active">
+                <div class="progress-bar  progress-bar-info progress-bar-striped"
+                     role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"
+                     style="width: 80%">
+                </div>
+            </div>
+            <span class="total-time">总耗时4 Hrs 36 Mins</span>
+        </div>
+    </div>
+    <div class="check-body">
+        <div class="title">
+            <div style="padding: 19px 0 0 17px;">离开 <br>办案区</div>
+        </div>
+        <div class="info">
+            <ul class="target">
+                <li>对&nbsp;&nbsp;&nbsp;象：</li>
+                <li>王大峰</li>
+                <li>420111197804125461</li>
+                <li>男</li>
+                <li>31岁</li>
+            </ul>
+            <ul class="handle">
+                <li>办案人：</li>
+                <li>黄小松</li>
+                <li>王欢</li>
+            </ul>
+        </div>
+        <div class="photo">
+            <span>照片</span>
+        </div>
+        <ul class="timing">
+            <li id="hour">00</li>
+            <li id="minutes">00</li>
+            <li id="second">00</li>
+        </ul>
+    </div>
+    <div class="check-leave">
+        <form action="">
+            <ul>
+                <li>
+                    离开时间：
+                    <input type="text" id="datetimepicker1" class="datetimepicker">
+                    离开原因：
+                    <select class="leave-reason">
+                        <option value="">xxx</option>
+                        <option value="">111</option>
+                        <option value="">222</option>
+                    </select>
+                </li>
+                <li>
+                    随身物品处理情况：
+                    <input type="radio" id="all" name="goods"><label for="all">全部返还</label>
+                    <input type="radio" id="part" name="goods"><label for="part">部分返还</label>
+                </li>
+                <li>
+                    <div>未返还物品情况记载：</div>
+                    <textarea class="textarea" name="" id="" cols="72" rows="9"></textarea>
+                </li>
+                <li>
+                    领取人身份证号码：
+                    <input class="idCard" type="text">
+                    领取时间：
+                    <input type="text" id="datetimepicker2" class="datetimepicker">
+                </li>
+            </ul>
+        </form>
+    </div>
+    <div class="close-btn">结束本环节</div>
+</div>
+<!--人员信息核查-->
+<div class="flow-btn">人员信息核查</div>
+<script src="js/jquery-1.9.0.js"></script>
+<script src="js/jquery-sign.js"></script>
+ <script src="js/dialog.js"></script>
+<script src="./js/jquery.jedate.min.js"></script>
+<script>
+
+  $.jeDate("#datetimepicker1",{
+//    isinitVal:true,
+    ishmsVal:false,
+//    minDate: '2016-06-16 23:59:59',
+    maxDate: $.nowDate({DD:0}),
+    format:"YYYY-MM-DD hh:mm",
+    zIndex:3000
+  });
+  $.jeDate("#datetimepicker2",{
+//    isinitVal:true,
+    ishmsVal:false,
+//    minDate: '2016-06-16 23:59:59',
+    maxDate: $.nowDate({DD:0}),
+    format:"YYYY-MM-DD hh:mm",
+    zIndex:3000
+  });
+
+
+//  $.sign.bindSign('#signx');//初始化
+//  // $.sign.setSignColor('#3498DB'); 设置标记框颜色
+//  // $.sign.setBodyColor('rgba(255,255,255,0.5)'); 设置提示背景颜色
+//  // $.sign.setFontColor('#000');//设置字体颜色
+//
+//  var data = [{left: 160, top: 27, message: "头"}, {left: 272, top: 348, message: "手"}];
+////
+//  $.sign.loadingSign(data);//载入标记数据
+//
+//  var m = $.sign.getSignMessage();//获取所有标记数据，返回为数组
+//
+//  $('.close-btn').click(function () {
+//    console.log(m);
+//  });
+
+// 人员信息核查按钮
+  (function () {
+    var mainOffsetWidth = $('.content').width();
+    var mainOffsetLeft = $('.content').offset().left;
+
+    $('.flow-btn').css({left:mainOffsetWidth+mainOffsetLeft+10,top:450});
+
+
+    $(window).scroll(function() {
+      var scrolls = $(this).scrollTop();
+      $('.flow-btn').css({top:scrolls+450})
+    });
+  })();
+
+  //人员信息核查dialog
+ $('.flow-btn').on('click', function () {
+     var d = dialog({
+       width: 1100,
+       height: 750,
+       content: '<div class="compare">' +
+       '<div class="compare-title">人员信息核查比对</div>' +
+       '<div class="check-box">' +
+       '<div class="check-id"><input class="idCard" id="idCard" placeholder="请输入身份证号码" type="text"></div>' +
+       '<div class="check-btn">查询</div>' +
+       '</div>' +
+       '<div class="compare-message">' +
+       '<ul class="messages">' +
+       '<li>姓名：<span class="msg">王晓阳</span></li>' +
+       '<li>身份证号码：<span class="msg">4201111197905122461</span></li>' +
+       '<li>性别：<span class="msg">男</span></li>' +
+       '<li>出生日期：<span class="msg">1979年5月12日</span></li>' +
+       '<li>户籍地址：<span class="msg">武汉市洪山区野芷湖西路6号</span></li>' +
+       '</ul>' +
+       '<div class="photo">' +
+       '<span>照片</span>' +
+       '</div>' +
+       '</div>' +
+       '<ul class="btns">' +
+       '<li><button class="comform-btn">确认核查信息</button></li>' +
+       '<li><button>复制核查信息</button></li>' +
+       '</ul>' +
+       '</div>'
+     });
+
+     d.showModal();
+     $('.comform-btn').click(function(){
+       d.close()
+     });
+   });
+</script>
+
+</body>
+</html>

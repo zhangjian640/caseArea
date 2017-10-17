@@ -20,14 +20,14 @@
 	body{background:#fff;}
 	a,a:hover{color:#333;}
 
-body{
-	width: 100vw;
-	height: 100vh;
-	background: url(../images/index/bg.png);
-	/*background-image:-webkit-linear-gradient(to left top, #04132d, #375789);*/
-	/*background-image:linear-gradient(to left top, #04132d, #375789);*/
-	color: #fff;
-}
+/*body{*/
+	/*width: 100vw;*/
+	/*height: 100vh;*/
+	/*background: url(../images/index/bg.png);*/
+	/*!*background-image:-webkit-linear-gradient(to left top, #04132d, #375789);*!*/
+	/*!*background-image:linear-gradient(to left top, #04132d, #375789);*!*/
+	/*color: #fff;*/
+/*}*/
 .clearfix:after {
 	content: "";
 	display: block;

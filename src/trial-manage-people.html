@@ -127,41 +127,82 @@
             <textarea name=""></textarea>
         </div>
         <div class="photo-wrap" id="signx">
-            <!--<div class="shade">-->
-                <!--<div class="">开始标注（点击鼠标右键）</div>-->
-            <!--</div>-->
+            <div class="title">点击鼠标右键开始标注</div>
         </div>
     </div>
     <div class="close-btn">结束本环节</div>
 </div>
-<script src="js/jquery.js"></script>
-<script src="js/jquery-sign.mini.js"></script>
+<!--人员信息核查-->
+<div class="flow-btn">人员信息核查</div>
+<script src="js/jquery-1.9.0.js"></script>
+<script src="js/jquery-sign.js"></script>
+ <script src="js/dialog.js"></script>
 <script>
 
-  $.sign.bindSign('#signx');//初始化
-  // $.sign.setSignColor('#3498DB'); 设置标记框颜色
-  // $.sign.setBodyColor('rgba(255,255,255,0.5)'); 设置提示背景颜色
-  // $.sign.setFontColor('#000');//设置字体颜色
-
-//  var data = [{left: 160, top: 27, message: "头"}, {left: 272, top: 348, message: "手"}];
+//  $.sign.bindSign('#signx');//初始化
+//  // $.sign.setSignColor('#3498DB'); 设置标记框颜色
+//  // $.sign.setBodyColor('rgba(255,255,255,0.5)'); 设置提示背景颜色
+//  // $.sign.setFontColor('#000');//设置字体颜色
 //
+//  var data = [{left: 160, top: 27, message: "头"}, {left: 272, top: 348, message: "手"}];
+////
 //  $.sign.loadingSign(data);//载入标记数据
+//
+//  var m = $.sign.getSignMessage();//获取所有标记数据，返回为数组
+//
+//  $('.close-btn').click(function () {
+//    console.log(m);
+//  });
 
-  var m = $.sign.getSignMessage();//获取所有标记数据，返回为数组
+// 人员信息核查按钮
+  (function () {
+    var mainOffsetWidth = $('.content').width();
+    var mainOffsetLeft = $('.content').offset().left;
 
-  $('.close-btn').click(function () {
-    console.log(m);
-    var msg = '';
-    for (var key in m) {
-      msg +=
-        `{
-        'left:', '${m[key].left}',
-        'top:','${m[key].top}',
-        'message:','${m[key].message}'
-        }`;
-    }
-    alert(`[${msg}]`);
-  });
+    $('.flow-btn').css({left:mainOffsetWidth+mainOffsetLeft+10,top:450});
+
+
+    $(window).scroll(function() {
+      var scrolls = $(this).scrollTop();
+      $('.flow-btn').css({top:scrolls+450})
+    });
+  })();
+
+  //人员信息核查dialog
+ $('.flow-btn').on('click', function () {
+     var d = dialog({
+       width: 1100,
+       height: 750,
+       content: '<div class="compare">' +
+       '<div class="compare-title">人员信息核查比对</div>' +
+       '<div class="check-box">' +
+       '<div class="check-id"><input class="idCard" id="idCard" placeholder="请输入身份证号码" type="text"></div>' +
+       '<div class="check-btn">查询</div>' +
+       '</div>' +
+       '<div class="compare-message">' +
+       '<ul class="messages">' +
+       '<li>姓名：<span class="msg">王晓阳</span></li>' +
+       '<li>身份证号码：<span class="msg">4201111197905122461</span></li>' +
+       '<li>性别：<span class="msg">男</span></li>' +
+       '<li>出生日期：<span class="msg">1979年5月12日</span></li>' +
+       '<li>户籍地址：<span class="msg">武汉市洪山区野芷湖西路6号</span></li>' +
+       '</ul>' +
+       '<div class="photo">' +
+       '<span>照片</span>' +
+       '</div>' +
+       '</div>' +
+       '<ul class="btns">' +
+       '<li><button class="comform-btn">确认核查信息</button></li>' +
+       '<li><button>复制核查信息</button></li>' +
+       '</ul>' +
+       '</div>'
+     });
+
+     d.showModal();
+     $('.comform-btn').click(function(){
+       d.close()
+     });
+   });
 </script>
 
 </body>

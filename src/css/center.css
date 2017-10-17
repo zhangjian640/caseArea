@@ -1,0 +1,113 @@
+@charset "utf-8";
+body {
+    background: none;
+    color: #000;
+    font-size: 16px;
+}
+
+.center-wrap {
+    width: 800px;
+    margin: 10px auto;
+}
+
+.center-wrap .title {
+    width: 330px;
+    margin: 10px auto 0;
+    padding-bottom: 8px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.center-wrap .remark {
+    height: 30px;
+}
+
+.center-wrap .remark .dept {
+    float: left;
+}
+
+.center-wrap .remark .code {
+    /*padding-right: 100px;*/
+    float: right;
+
+}
+
+.center-wrap table {
+    width: 100%;
+    margin-top: -1px;
+}
+
+.center-wrap table.last {
+}
+
+.center-wrap table tr {
+    height: 40px;
+}
+
+.center-wrap table tr td {
+    text-align: center;
+}
+
+.center-wrap table .solid-line {
+    display: inline-block;
+    width: 140px;
+    border-bottom: 1px solid #000;
+}
+
+.center-wrap table .short-line{
+    display: inline-block;
+    width: 80px;
+    border-bottom: 1px solid #000;
+}
+
+.center-wrap table tr .left {
+    text-align: left;
+    padding-left: 10px;
+}
+.center-wrap table tr .bookNo-wrap{
+    clear: both;
+    margin-bottom: 5px;
+}
+.center-wrap table tr .check-box-wrap{
+    padding: 0 20px;
+}
+.center-wrap table tr .check-box-wrap li{
+    width: 140px;
+    float: left;
+}
+.center-wrap table tr .before-space {
+    padding: 0 5px;
+}
+.center-wrap table tr .photo{
+    width: 380px;
+}
+.center-wrap table tr .underline {
+    text-indent: 0;
+    display: block;
+    word-break: break-all;
+    text-decoration: underline;
+}
+
+.center-wrap table tr .dash-line {
+    height: 25px;
+    width: 80%;
+    border-bottom: 1px dashed #000;
+}
+
+.center-wrap table .sign-name {
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.center-wrap table .sign-name .name,
+.center-wrap table .sign-name .date {
+    float: left;
+    width: 50%;
+}
+.center-wrap table .sign-name .name{
+    margin-top: 20px;
+}
+
+.center-wrap table .sign-name .date {
+    margin-top: 20px;
+}

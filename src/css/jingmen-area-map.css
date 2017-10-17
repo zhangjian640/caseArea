@@ -1,0 +1,99 @@
+@charset "utf-8";
+
+/*荆门市*/
+.case-main .case-area .area-jingmen-map {
+    margin-top: 7px;
+    width: 917px;
+    height: 271px;
+    position: relative;
+    background: #2e4767 url(../images/index/jingmen/jingmen-dipan.png) no-repeat center;
+}
+
+.area-jingmen-map .item {
+    position: absolute;
+    z-index: 10;
+}
+
+.area-jingmen-map .area1 {
+    width: 125px;
+    height: 135px;
+    background: url(../images/index/jingmen/jm7.png) no-repeat;
+    top: 45px;
+    left: 77px;
+}
+
+.area-jingmen-map .area1.active {
+    background: url(../images/index/jingmen/jm7_light.png) no-repeat;
+}
+
+.area-jingmen-map .area2 {
+    width: 125px;
+    height: 135px;
+    background: url(../images/index/jingmen/jm6.png) no-repeat;
+    top: 45px;
+    left: 175px;
+}
+
+.area-jingmen-map .area2.active {
+    background: url(../images/index/jingmen/jm6_light.png) no-repeat;
+}
+
+.area-jingmen-map .area3 {
+    width: 125px;
+    height: 135px;
+    background: url(../images/index/jingmen/jm5.png) no-repeat;
+    top: 45px;
+    left: 270px;
+}
+
+.area-jingmen-map .area3.active {
+    background: url(../images/index/jingmen/jm5_light.png) no-repeat;
+}
+
+.area-jingmen-map .area4 {
+    width: 125px;
+    height: 135px;
+    background: url(../images/index/jingmen/jm4.png) no-repeat;
+    top: 45px;
+    left: 367px;
+}
+
+.area-jingmen-map .area4.active {
+    background: url(../images/index/jingmen/jm4_light.png) no-repeat;
+}
+
+.area-jingmen-map .area5 {
+    width: 125px;
+    height: 135px;
+    background: url(../images/index/jingmen/jm3.png) no-repeat;
+    top: 45px;
+    left: 463px;
+}
+
+.area-jingmen-map .area5.active {
+    background: url(../images/index/jingmen/jm3_light.png) no-repeat;
+}
+
+.area-jingmen-map .area6 {
+    width: 125px;
+    height: 135px;
+    background: url(../images/index/jingmen/jm2.png) no-repeat;
+    top: 45px;
+    left: 561px;
+}
+
+.area-jingmen-map .area6.active {
+    background: url(../images/index/jingmen/jm2_light.png) no-repeat;
+}
+
+.area-jingmen-map .area7 {
+    width: 125px;
+    height: 135px;
+    background: url(../images/index/jingmen/jm1.png) no-repeat;
+    top: 45px;
+    left: 655px;
+}
+
+.area-jingmen-map .area7.active {
+    background: url(../images/index/jingmen/jm1_light.png) no-repeat;
+}

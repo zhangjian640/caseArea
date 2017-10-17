@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="./css/ui-dialog.css">
+    <style>
+        .dialog{
+            line-height: 100px;
+            text-indent: 20px;
+        }
+    </style>
+</head>
+<body>
+<button id="example1">open</button>
+<script src="js/jquery-1.9.0.js"></script>
+<script src="js/dialog.js"></script>
+<script>
+  $('#example1').click(function () {
+    var d = dialog({
+      title: '消息',
+      content: '风吹起的青色衣衫，夕阳里的温暖容颜，你比以前更加美丽，像盛开的花<br>——许巍《难忘的一天》',
+      okValue: '确 定',
+      ok: function () {},
+      cancelValue: '取消',
+      cancel: function () {}
+    });
+
+    d.show();
+  });
+</script>
+</body>
+</html>

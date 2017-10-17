@@ -1,11 +1,14 @@
 window.onload = function () {
-  var HH = 0;
-  var mm = 0;
-  var ss = 0;
   var hour = document.getElementById('hour');
   var minutes = document.getElementById('minutes');
   var second = document.getElementById('second');
+
+  var HH = parseInt(hour.innerHTML) || 0;
+  var mm = parseInt(minutes.innerHTML) || 0;
+  var ss = parseInt(second.innerHTML) || 0;
+
   var timer = setInterval(function () {
+
     if (++ss == 60) {
       if (++mm == 60) {
         HH++;

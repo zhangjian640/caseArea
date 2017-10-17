@@ -4,6 +4,8 @@ body {
     background: none;
     color: #000;
     overflow-x: hidden;
+    width: 100%;
+    height: 100%;
 }
 
 .header {
@@ -417,7 +419,8 @@ body {
     height: 134px;
     border: 1px solid #c9e2ff;
 }
-.check-body .photo span{
+
+.check-body .photo span {
     width: 20px;
     display: block;
     margin: 35% auto;
@@ -425,7 +428,8 @@ body {
     text-align: center;
     color: gray;
 }
-.check-body .timing{
+
+.check-body .timing {
     width: 304px;
     height: 76px;
     margin-top: 62px;
@@ -433,7 +437,8 @@ body {
     overflow: hidden;
     background: url(../images/trial/jishi_bg.png) no-repeat;
 }
-.check-body .timing li{
+
+.check-body .timing li {
     float: left;
     width: 83px;
     color: #fff;
@@ -443,29 +448,33 @@ body {
     margin-left: 27px;
     text-align: center;
 }
-.check-body .timing li:first-child{
+
+.check-body .timing li:first-child {
     margin-left: 0;
 }
 
-.content .check-msg{
+.content .check-msg {
     width: 100%;
-    overflow: hidden;
+    height: 563px;
 }
-.content .check-msg .input-area{
+
+.content .check-msg .input-area {
     width: 400px;
     float: left;
 }
-.content .check-msg .input-area .title{
+
+.content .check-msg .input-area .title {
     padding-top: 30px;
     padding-bottom: 10px;
     color: #575757;
     border-bottom: 2px dashed #c9c9c9;
 }
 
-.content .check-msg .input-area .title >span{
+.content .check-msg .input-area .title > span {
     font-size: 18px;
 }
-.content .check-msg .input-area textarea{
+
+.content .check-msg .input-area textarea {
     width: 380px;
     height: 140px;
     margin-top: 14px;
@@ -473,7 +482,7 @@ body {
     padding: 10px;
 }
 
-.content .check-msg .photo-wrap{
+.content .check-msg .photo-wrap {
     position: relative;
     width: 575px;
     height: 563px;
@@ -481,7 +490,7 @@ body {
     background: url(../images/trial/rentitu.png) no-repeat;
 }
 
-.content .close-btn{
+.content .close-btn {
     width: 238px;
     height: 58px;
     margin: 60px auto;
@@ -492,14 +501,241 @@ body {
     line-height: 58px;
     cursor: pointer;
 }
-.content .close-btn:hover{
-    background: url(../images/trial/btn_jieshu_hover.png) no-repeat;
 
+.content .close-btn:hover {
+    background: url(../images/trial/btn_jieshu_hover.png) no-repeat;
 }
 
-.shade{
+.shade {
     width: 575px;
     height: 563px;
     background: rgba(100, 100, 100, 0.5);
     z-index: 100;
+}
+
+/*flow-box*/
+.flow-btn {
+    width: 20px;
+    height: 238px;
+    position: absolute;
+    z-index: 100;
+    color: #fff;
+    font-size: 20px;
+    padding: 30px 20px;
+    background: url(../images/trial/rsjc_bg.png) no-repeat;
+    cursor: pointer;
+}
+
+/*人员信息核查比对*/
+.compare {
+    width: 1010px;
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    margin-left: -505px;
+    background: #fff;
+}
+
+.compare .compare-title {
+    width: 100%;
+    height: 55px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    line-height: 55px;
+    background: #10509c;
+}
+
+.compare .check-box {
+    width: 785px;
+    height: 136px;
+    margin: 20px auto 0;
+}
+
+.compare .check-box .check-id {
+    width: 500px;
+    height: 55px;
+    background: #edf9fd;
+    border: 1px solid #c9e2ff;
+    margin-top: 40px;
+    float: left;
+}
+
+.compare .check-box .idCard {
+    width: 473px;
+    padding-left: 27px;
+    height: 53px;
+    line-height: 57px;
+    font-size: 18px;
+    color: #10509c;
+    border: none;
+    vertical-align: top;
+    background: #edf9fd;
+}
+
+.compare .check-box .check-btn {
+    width: 120px;
+    height: 57px;
+    color: #fff;
+    cursor: pointer;
+    float: left;
+    background: #0d63c3;
+    margin-left: 100px;
+    margin-top: 40px;
+    text-align: center;
+    line-height: 57px;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+.compare .check-box .check-btn:hover {
+    background: #ff8000;
+}
+
+.compare-message {
+    width: 785px;
+    margin: 40px auto;
+    position: relative;
+}
+
+.compare-message li {
+    line-height: 60px;
+    border-bottom: 2px dashed #c9c9c9;
+    color: #583d3d;
+    font-size: 18px;
+    position: relative;
+}
+
+.compare-message li .msg {
+    position: absolute;
+    left: 145px;
+    color: #10509c;
+}
+
+.compare-message .photo {
+    position: absolute;
+    right: 0;
+    top: -15px;
+    width: 106px;
+    height: 134px;
+    border: 1px solid #c9e2ff;
+    background: #fff;
+}
+
+.compare-message .photo span {
+    width: 20px;
+    display: block;
+    margin: 35% auto;
+    font-size: 20px;
+    text-align: center;
+    color: gray;
+}
+
+.compare .btns {
+    width: 785px;
+    margin: 20px auto 0;
+    position: relative;
+    height: 58px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.compare .btns li {
+    display: block;
+    float: left;
+    width: 49%;
+    height: 58px;
+}
+
+.ui-dialog-button {
+    width: 785px;
+    margin: 20px auto 0;
+    position: relative;
+    height: 58px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.compare .btns li button {
+    width: 240px;
+    height: 58px;
+    color: #fff;
+    font-size: 22px;
+    background: #2262c7;
+    line-height: 58px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.ui-dialog-footer button {
+    display: block;
+    float: left;
+    width: 240px;
+    height: 58px;
+    color: #fff;
+    font-size: 22px;
+    background: #2262c7;
+    line-height: 58px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.content .check-leave {
+    margin: 27px 84px;
+}
+
+.content .check-leave li {
+    font-size: 18px;
+    color: #575757;
+    padding: 10px 0;
+    border-bottom: 2px dashed #c9c9c9;
+}
+
+.content .check-leave li input {
+
+    font-size: 18px;
+    vertical-align: middle;
+}
+
+.check-leave .datetimepicker {
+    width: 270px;
+    height: 38px;
+    line-height: 38px;
+    margin-right: 15px;
+}
+
+.check-leave .leave-reason {
+    width: 300px;
+    height: 40px;
+    line-height: 40px;
+    vertical-align: middle;
+}
+
+.check-leave label {
+    margin: 0 30px 0 5px;
+}
+
+.check-leave input[type="radio"] {
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+}
+
+.check-leave .textarea {
+    margin-left: 95px;
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.check-leave .idCard {
+    width: 240px;
+    height: 38px;
+    line-height: 38px;
+}
+.check-leave .select-reason{
+
 }

@@ -1,0 +1,147 @@
+.compare {
+    width: 1010px;
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    margin-left: -505px;
+    background: #fff;
+}
+
+.compare .compare-title {
+    width: 100%;
+    height: 55px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    line-height: 55px;
+    background: #10509c;
+}
+
+.compare .check-box {
+    width: 785px;
+    height: 250px;
+    margin: 20px auto 0;
+}
+
+.compare .check-box .check-id {
+    width: 783px;
+    height: 55px;
+    background: #edf9fd;
+    border: 1px solid #c9e2ff;
+}
+
+.compare .check-box .idCard {
+    width: 781px;
+    text-indent: 27px;
+    height: 53px;
+    line-height: 57px;
+    font-size: 18px;
+    color: #10509c;
+    border: none;
+    vertical-align: top;
+    background: #edf9fd;
+}
+
+.compare .check-box .check-btn {
+    width: 134px;
+    height: 136px;
+    margin: 45px auto 0;
+    color: #fff;
+    cursor: pointer;
+    background: url(../images/trial/check_btn.png);
+}
+
+.compare .check-box .check-btn:hover {
+    background: url(../images/trial/check_btn_hover.png);
+}
+
+.compare-message {
+    width: 785px;
+    margin: 0 auto;
+    position: relative;
+
+}
+
+.compare-message li {
+    line-height: 70px;
+    border-bottom: 2px dashed #c9c9c9;
+    color: #583d3d;
+    font-size: 18px;
+    position: relative;
+}
+
+.compare-message li .msg {
+    position: absolute;
+    left: 145px;
+    color: #10509c;
+}
+
+.compare-message .photo {
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 106px;
+    height: 134px;
+    border: 1px solid #c9e2ff;
+    background: #fff;
+}
+
+.compare-message .photo span {
+    width: 20px;
+    display: block;
+    margin: 35% auto;
+    font-size: 20px;
+    text-align: center;
+    color: gray;
+}
+
+.compare .btns{
+    width: 785px;
+    margin: 20px auto 0;
+    position: relative;
+    height: 58px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.compare .btns li{
+    display: block;
+    float: left;
+    width: 49%;
+    height: 58px;
+}
+
+.ui-dialog-button{
+    width: 785px;
+    margin: 20px auto 0;
+    position: relative;
+    height: 58px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.compare .btns li button{
+    width: 240px;
+    height: 58px;
+    color: #fff;
+    font-size: 22px;
+    background: #2262c7;
+    line-height: 58px;
+    outline: none;
+    border:none;
+    cursor: pointer;
+}
+.ui-dialog-footer button{
+    display: block;
+    float: left;
+    width: 240px;
+    height: 58px;
+    color: #fff;
+    font-size: 22px;
+    background: #2262c7;
+    line-height: 58px;
+    outline: none;
+    border:none;
+    cursor: pointer;
+}

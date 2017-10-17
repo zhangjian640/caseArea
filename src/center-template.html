@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/center.css">
+    <script src="./js/template-web.js"></script>
+    <title>办案中心使用情况登记表</title>
+</head>
+<body>
+<div class="aside"></div>
+<input type="button" name="button_export" title="打印" onclick=preview(1) value="打印">
+<!--startprint1-->
+<div id="content" class="center-wrap"></div>
+<!--endprint1-->
+<!--使用airTemplate模板-->
+<script id="table" type="text/tmpl">
+            <div class="title">办案中心使用情况登记表</div>
+            <div class="remark">
+                <div class="dept">填表单位：{{dept}}</div>
+                <div class="code">编号：{{deptNum}}</div>
+            </div>
+            <table border="1">
+                <tr>
+                    <td width="6%" style="padding: 0 8px" rowspan="5">进入办案中心人员基本情况</td>
+                    <td width="14%">姓名</td>
+                    <td width="11%">{{name}}</td>
+                    <td width="13%">性别</td>
+                    <td width="8%">{{sex}}</td>
+                    <td width="9%">出生日期</td>
+                    <td width="18%">{{date}}</td>
+                    <td width="9%">联系方式</td>
+                    <td>{{telephone}}</td>
+                </tr>
+                <tr>
+                    <td>身份证种类</td>
+                    <td>cardtype</td>
+                    <td>身份证件号码</td>
+                    <td colspan="5" class="left">cardNo</td>
+                </tr>
+                <tr>
+                    <td>家庭住址</td>
+                    <td colspan="7" class="left">homeaddr</td>
+                </tr>
+                <tr>
+                    <td style="padding: 0 20px;">进入办案中心原由</td>
+                    <td colspan="7" class="left">
+                        <div>
+                            <span>案件编号：</span><span class="solid-line">caseNo</span>
+                            <span>案由：</span><span class="solid-line">casereason</span>
+                        </div>
+                        <ul class="check-box-wrap">
+                            <li>
+                                <input type="checkbox" id="reason1"><label for="reason1">投案自首</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="reason2"><label for="reason2">治安传唤</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="reason3"><label for="reason3">继续盘问</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="reason4"><label for="reason4">刑事传唤</label><br>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="reason5"><label for="reason5">拘传</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="reason6"><label for="reason6">刑事拘留</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="reason7"><label for="reason7">取保候审</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="reason8"><label for="reason8">监视居住</label><br>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="reason9"><label for="reason9">逮捕</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="reason10"><label for="reason10">被害人</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="reason11"><label for="reason11">证人</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="reason12"><label for="reason12">其他:</label>
+                                <span class="short-line"></span>
+                            </li>
+                        </ul>
+                        <div class="bookNo-wrap">
+                            <span>文书编号：</span><span class="solid-line">bookNo</span>
+                            <span>办案民警签名：</span><span class="solid-line">asdf</span>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding: 0 20px;">进入办案中心时间</td>
+                    <td colspan="4">
+                        2017
+                        <span class="before-space">年</span>
+                        07
+                        <span class="before-space">月</span>
+                        15
+                        <span class="before-space">日</span>
+                        2
+                        <span class="before-space">时</span>
+                        3
+                        <span class="before-space">分</span>
+                    </td>
+                    <td>管理员签名</td>
+                    <td colspan="2"></td>
+                </tr>
+            </table>
+            <table border="1">
+                <tr>
+                    <td width="6%" style="padding: 0 8px" rowspan="8">安全检查情况</td>
+                    <td width="4%" style="padding: 0 8px" rowspan="3">人身检查记录</td>
+                    <td width="32%" style="text-indent: 30px;padding: 0 8px;" colspan="3" class="left">
+                        自述症状：(既往病史、是否饮酒是否患有传染性等疾病)
+                        <span class="underline" style="width: 220px;">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</span>
+                    </td>
+                    <td colspan="4" rowspan="2">
+                        <img class="photo" src="./images/trial/rentitu.png" alt="">
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-indent: 30px;padding: 0 8px;" colspan="3" class="left">
+                        检查情况：(体表是否有伤痕、是否饮酒以及全身检查情况)
+                        <span class="underline" style="width: 220px;">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="6%" style="padding: 0 8px">检查民警签字</td>
+                    <td width="6%"></td>
+                    <td width="6%">见证人签字</td>
+                    <td width="10%"></td>
+                    <td>被检查人/维护人签字捺印</td>
+                    <td colspan="2"></td>
+                </tr>
+                <tr>
+                    <td width="4%" style="padding: 0 8px" rowspan="6">随身财物检查记录卡</td>
+                    <td colspan="2">物品名称及特征</td>
+                    <td>数量</td>
+                    <td>单位</td>
+                    <td>保管措施</td>
+                    <td>是否涉案</td>
+                    <td>保管柜号</td>
+                </tr>
+                <tr>
+                    <td colspan="2"></td>
+                    <td></td>
+                    <td></td>
+                    <td>
+                        <input type="checkbox">扣押
+                        <input type="checkbox">暂存
+                        <input type="checkbox">代保管
+                    </td>
+                    <td>
+                        <input type="radio" name="">是
+                        <input type="radio" name="">否
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td colspan="2"></td>
+                    <td></td>
+                    <td></td>
+                    <td>
+                        <input type="checkbox">扣押
+                        <input type="checkbox">暂存
+                        <input type="checkbox">代保管
+                    </td>
+                    <td>
+                        <input type="radio" name="">是
+                        <input type="radio" name="">否
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>办案人员签字</td>
+                    <td>asdf</td>
+                    <td width="10%" colspan="2">随身财物管理员签字</td>
+                    <td>asdf</td>
+                    <td width="14%">涉案人员签字</td>
+                    <td>asdf</td>
+                </tr>
+            </table>
+            <table border="1">
+                <tr>
+                    <td width="6%" style="padding: 0 8px" rowspan="2">信息采集</td>
+                    <td width="14%">信息采集</td>
+                    <td width="16%" colspan="2">
+                        <input type="radio" name="">是
+                        <input style="margin-left: 20px;" type="radio" name="">否
+                    </td>
+                    <td>采集项目</td>
+                    <td colspan="4">
+                        <input type="checkbox">指纹
+                        <input style="margin-left: 10px;" type="checkbox">血液
+                        <input style="margin-left: 10px;" type="checkbox">尿液
+                        <input style="margin-left: 10px;" type="checkbox">其他
+                    </td>
+                </tr>
+                <tr>
+                    <td>信息入库</td>
+                    <td colspan="2">
+                        <input type="radio" name="">是
+                        <input style="margin-left: 20px;" type="radio" name="">否
+                    </td>
+                    <td>核查对比</td>
+                    <td colspan="3">
+                        <input type="radio" name="">是
+                        <input style="margin-left: 20px;" type="radio" name="">否
+                    </td>
+                </tr>
+                <tr>
+                    <td width="6%" style="padding: 0 8px" rowspan="10">询问
+                        、
+                        讯问
+                        、
+                        等候
+                        、
+                        休息
+                        、
+                        饮食等活动记录</td>
+                    <td colspan="3">时间</td>
+                    <td>房间名称</td>
+                    <td width="16%">侦查员/看管人签名</td>
+                    <td width="16%">活动内容/询问音视频编号</td>
+                    <td>备注</td>
+                </tr>
+                <tr>
+                    <td width="12%"></td>
+                    <td width="6%">至</td>
+                    <td width="12%"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>至</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>至</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>至</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>至</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>至</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>至</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+            <table border="1">
+                <tr>
+                    <td width="6%" style="padding: 0 8px" rowspan="2">离开办案区</td>
+                    <td width="15%">离开时间</td>
+                    <td width="20%">2017年5月10日 10：20</td>
+                    <td width="15%">离开原因</td>
+                    <td width="25%">xxxxxxx</td>
+                </tr>
+                <tr>
+                    <td>随身物品处理情况</td>
+                    <td colspan="3" class="left">
+                        <div>随身物品处理情况：
+                            <input type="checkbox">全部返还
+                            <input style="margin-left: 8%" type="checkbox">部分返还
+                        </div>
+                        未返还物品情况记载：
+                        <span class="underline" style="width:450px;">
+                            xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+                            xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+                        </span>
+                        <div class="sign-name">
+                            <div class="name">
+                                <div>领取人签名：<span class="solid-line">xdd</span></div>
+                                <div>身份证号码：<span class="solid-line">xxx</span></div>
+                            </div>
+                            <div class="date">
+                                2017
+                                <span class="before-space">年</span>
+                                7
+                                <span class="before-space">月</span>
+                                10
+                                <span class="before-space">日</span>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="font-weight: bold" colspan="2">管理员签名</td>
+                    <td colspan="3" class="left">ssss</td>
+                </tr>
+            </table>
+
+
+</script>
+
+<script>
+  var data = {
+    dept: '武汉市公安局',
+    deptNum: '213232131',
+    name: '张XX',
+    sex: '男',
+    date: '1980年10月20日',
+    telephone: '135xxxxxxx'
+  }
+  var html = template('table', data);
+  document.getElementById('content').innerHTML = html
+
+  function preview(oper) {
+    if (oper < 10) {
+      var bdhtml = document.body.innerHTML;//获取当前页的html代码
+      console.log(bdhtml)
+      sprnstr = "<!--startprint" + oper + "-->";//设置打印开始区域
+      eprnstr = "<!--endprint" + oper + "-->";//设置打印结束区域
+      prnhtml = bdhtml.substring(bdhtml.indexOf(sprnstr) + 18); //从开始代码向后取html
+      prnhtml = prnhtml.substring(0, prnhtml.indexOf(eprnstr));//从结束代码向前取html
+      window.document.body.innerHTML = prnhtml;
+      window.print();
+      window.document.body.innerHTML = bdhtml;
+    } else {
+      window.print();
+    }
+  }
+
+
+
+</script>
+
+</body>
+</html>

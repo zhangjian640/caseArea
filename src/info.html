@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>系统公告</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/information.css">
+    <link rel="stylesheet" href="./css/jquery.bootgrid.css">
+    <link rel="stylesheet" href="./css/font-awesome.css">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <script src="./js/jquery-1.9.0.js"></script>
+    <script src="./js/jquery.bootgrid.js"></script>
+    <script src="./js/jquery.bootgrid.fa.js"></script>
+</head>
+<body>
+<div class="content">
+    <div class="info-title">
+        <div class="title">系统公告</div>
+        <div class="info-line"></div>
+    </div>
+    <div class="info-table">
+        <table id="infoTable">
+            <thead>
+            <tr>
+                <th data-column-id="id" width="10">编号</th>
+                <th data-column-id="title" width="50">公告标题</th>
+                <th data-column-id="publicPeople" width="10">发布人</th>
+                <th data-column-id="publicTime" width="10">发布时间</th>
+                <th data-column-id="publicDept" width="10">发布单位</th>
+                <th data-column-id="handleDept" width="10">操作单位</th>
+            </tr>
+            </thead>
+        </table>
+    </div>
+</div>
+<script>
+  $("#infoTable").bootgrid({
+    ajax: true,
+    url: "/api/link"
+  });
+</script>
+</body>
+</html>
