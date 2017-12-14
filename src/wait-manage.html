@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>候问管理</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/wait-manage.css">
+</head>
+<body>
+<div class="wait-manage">
+    <div class="area-title">候问区管理</div>
+
+    <div class="manage-wrap">
+        <div class="wait-room clearfix">
+            <div class="room-name">
+                <div class="room-count">候问室5</div>
+            </div>
+            <div class="room-msg">
+                <ul>
+                    <li>
+                        未成年人
+                        <div class="align"><span class="num">0</span>人</div>
+                    </li>
+                    <li>
+                        成年人
+                        <div class="align"><span class="num">0</span>人</div>
+                    </li>
+                    <li>
+                        残疾人
+                        <div class="align"><span class="num">0</span>人</div>
+                    </li>
+                    <li>特殊病人
+                        <div class="align"><span class="num">0</span>人</div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <ul class="wait-people">
+            <ul>
+                <li>姓名：<span class="value">王想</span>身份证号码：<span class="value">42111197905122564</span></li>
+                <li>性别：<span class="value">男</span>办案民警：<span class="value">李四</span></li>
+                <li>入区原由：<span class="value">刑事拘留</span>入区时间：<span class="value">2017.11.18 12:13:23</span></li>
+            </ul>
+        </ul>
+    </div>
+
+    <div class="manage-content">
+        <div class="title">候问人员</div>
+        <ul class="photos">
+            <li>
+                <img class="photo" src="./images/people1.png" alt="">
+                <div class="name">王为</div>
+            </li>
+            <li>
+                <img class="photo" src="./images/people1.png" alt="">
+                <div class="name">王为</div>
+            </li>
+            <li>
+                <img class="photo" src="./images/people1.png" alt="">
+                <div class="name">王为</div>
+            </li>
+            <li>
+                <img class="photo" src="./images/people1.png" alt="">
+                <div class="name">王为</div>
+            </li>
+            <li>
+                <img class="photo" src="./images/people1.png" alt="">
+                <div class="name">王为</div>
+            </li>
+            <li>
+                <img class="photo" src="./images/people1.png" alt="">
+                <div class="name">王为</div>
+            </li>
+            <li>
+                <img class="photo" src="./images/people1.png" alt="">
+                <div class="name">王为</div>
+            </li>
+            <li>
+                <img class="photo" src="./images/people1.png" alt="">
+                <div class="name">王为</div>
+            </li>
+            <li>
+                <img class="photo" src="./images/people1.png" alt="">
+                <div class="name">王为</div>
+            </li>
+            <li>
+                <img class="photo" src="./images/people1.png" alt="">
+                <div class="name">王为</div>
+            </li>
+            <li>
+                <img class="photo" src="./images/people1.png" alt="">
+                <div class="name">王为</div>
+            </li>
+            <li>
+                <img class="photo" src="./images/people1.png" alt="">
+                <div class="name">王为</div>
+            </li>
+            <li>
+                <img class="photo" src="./images/people1.png" alt="">
+                <div class="name">王为</div>
+            </li>
+            <li>
+                <img class="photo" src="./images/people1.png" alt="">
+                <div class="name">王为</div>
+            </li>
+            <li>
+                <img class="photo" src="./images/people1.png" alt="">
+                <div class="name">王为</div>
+            </li>
+            <li>
+                <img class="photo" src="./images/people1.png" alt="">
+                <div class="name">王为</div>
+            </li>
+            <li>
+                <img class="photo" src="./images/people1.png" alt="">
+                <div class="name">王为</div>
+            </li>
+            <li>
+                <img class="photo" src="./images/people1.png" alt="">
+                <div class="name">王为</div>
+            </li>
+        </ul>
+        <div class="summit"></div>
+    </div>
+
+</div>
+<script src="js/jquery-1.9.0.js"></script>
+<script>
+
+  $('.photos li').click(function () {
+    $(this).siblings().removeClass('active').find('.mark').remove();
+    $(this).addClass('active');
+    $(this).append('<img class="mark" src="images/icon_check.png">');
+  })
+  /*
+   ~function () {
+   var index = 0; // 分页从0开始
+   var isEnd = false; // 判断是否加载完
+   // 初始化调用
+   getMessage(index);
+
+   // 点击加载更多按钮加载数据
+   $('.load-more').click(function () {
+   if (isEnd === true) {
+   return;
+   }
+   index++;
+   getMessage(index)
+   });
+
+   // 监听滚动条高度加载数据
+   $(window).scroll(function () {
+   if (isEnd === true) {
+   return;
+   }
+
+   // 当滚动到最底部以上100像素时， 加载新内容
+   // 核心代码
+   if ($(document).height() - $(this).scrollTop() - $(this).height() < 200) {
+   index++;
+   getMessage(index);
+   }
+   });
+
+   // ajax请求数据
+   function getMessage(index) {
+   $.ajax({
+   url: "http://192.168.1.118:3003/getMessage",
+   data: {
+   page: index
+   },
+   dataType: "json",
+   success: function (data) {
+   if (data.length === 0) {
+   isEnd = true;
+   $('.load-more').hide();
+   return;
+   } else {
+   $('.load-more').show();
+   }
+   render(data);
+   }
+   }
+   )
+   }
+
+   // 渲染DOM
+   function render(data) {
+   var html = '';
+   for (var i = 0; i < data.length; i++) {
+   var item = data[i];
+   console.table(item);
+   var peoples = item.peoples;
+   var peopleItem = '';
+   if(peoples.length ===0){
+   peopleItem = `
+   <td>
+   <div class="img-wrap">
+   <img src="./images/default.png" alt="">
+
+   </div>
+   <div class="message">
+   <div class="name">暂无图片</div>
+   </div>
+   </td>
+   <td>
+   <div class="img-wrap">
+   <img src="./images/default.png" alt="">
+   </div>
+   <div class="message">
+   <div class="name">暂无图片</div>
+   </div>
+   </td>
+   <td>
+   <div class="img-wrap">
+   <img src="./images/default.png" alt="">
+   </div>
+   <div class="message">
+   <div class="name">暂无图片</div>
+   </div>
+   </td>
+
+   `
+   } else {
+   for (var j = 0; j < peoples.length; j++) {
+   var curPeople = peoples[j];
+   peopleItem = `
+   <td>
+   <div class="img-wrap">
+   <img src="./images/${curPeople.photo}" alt="">
+   </div>
+   <div class="message">
+   <div class="name">${curPeople.name}</div>
+   <div class="idCard">${curPeople.idCard}</div>
+   </div>
+   </td>
+   <td>
+   <div class="img-wrap">
+   <img src="./images/${curPeople.photo}" alt="">
+   </div>
+   <div class="message">
+   <div class="name">${curPeople.name}</div>
+   <div class="idCard">${curPeople.idCard}</div>
+   </div>
+   </td>
+   <td>
+   <div class="img-wrap">
+   <img src="./images/${curPeople.photo}" alt="">
+   </div>
+   <div class="message">
+   <div class="name">${curPeople.name}</div>
+   <div class="idCard">${curPeople.idCard}</div>
+   </div>
+   </td>
+   `
+   }
+   }
+
+   html += `<tr>
+   <td>
+   <div class="img-wrap">
+   <img src="./images/${item.origin}" alt="">
+   </div>
+   </td>
+   ${peopleItem}
+   <td>
+   <div class="summit"></div>
+   </td>
+   </tr>`;
+   }
+   $('.tbody').append(html);
+   }
+   }();
+   */
+</script>
+</body>
+</html>

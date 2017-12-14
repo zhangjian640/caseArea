@@ -1,0 +1,178 @@
+.content .belongings{
+    overflow: hidden;
+}
+
+.content .belongings .aside,
+.content .items-involved .aside {
+    width: 66px;
+    height: 288px;
+    background: #edf9fd;
+    border: 1px solid #c9e2ff;
+    box-sizing: border-box;
+    float: left;
+}
+
+.content .belongings .aside .title,
+.content .items-involved .aside .title{
+    margin-left: 13px;
+    width: 40px;
+    font-size: 30px;
+    color: #4184d3;
+    padding-left: 5px;
+    padding-top: 80px;
+}
+
+.content .belongings .aside .title{
+    background: url('../images/trial/icon_fenlei_sswp.png') 0 35px no-repeat;
+}
+
+.content .items-involved .aside .title{
+    background: url('../images/trial/icon_fenlei_sawp.png') 0 35px no-repeat;
+}
+
+.content .belongings-table{
+    margin-left: 76px;
+}
+
+.content .belongings-table table {
+    width: 100%;
+    height: 288px;
+    border: 1px solid #efefef;
+}
+
+.belongings-table table thead th {
+    background: #f8f8f8;
+    height: 47px;
+    font-size: 16px;
+    color: #444c63;
+    border-bottom: 1px solid #efefef;
+    border-right: 1px solid #efefef;
+}
+.belongings-table table thead th:nth-of-type(1),
+.belongings-table table thead th:nth-of-type(5){
+    text-indent: 10px;
+}
+.belongings-table table thead th:nth-of-type(2),
+.belongings-table table thead th:nth-of-type(3),
+.belongings-table table thead th:nth-of-type(4){
+    text-align: center;
+}
+.belongings-table table tbody td {
+    height: 59px;
+    font-size: 14px;
+    color: #444c63;
+    border-bottom: 1px solid #efefef;
+    border-right: 1px solid #efefef;
+}
+.belongings-table table tbody td:nth-of-type(2),
+.belongings-table table tbody td:nth-of-type(3),
+.belongings-table table tbody td:nth-of-type(4),
+.belongings-table table tbody td:nth-of-type(5) {
+    text-align: center;
+}
+
+.belongings-table table tbody tr:nth-of-type(odd) td {
+    background: #f8f8f8;
+}
+
+.belongings-table table tbody tr:nth-of-type(even) td {
+    background: #fff;
+}
+.belongings-table table td .input-name{
+    width: 300px;
+    height: 35px;
+    border: 1px solid #d1d1d1;
+    text-indent: 10px;
+}
+.belongings-table table td .short-input{
+    width: 230px;
+    height: 35px;
+    border: 1px solid #d1d1d1;
+    text-indent: 10px;
+}
+.belongings-table table td select{
+    width: 90%;
+    height: 36px;
+}
+.belongings-table table td .photo,
+.belongings-table table td .view,
+.belongings-table table td .del{
+    display: inline-block;
+    width: 96px;
+    height: 36px;
+    line-height: 36px;
+    font-size: 15px;
+    color: #fff;
+    border-radius: 5px;
+    text-indent: 45px;
+    cursor: pointer;
+}
+.belongings-table table td .photo{
+    background: #0093d0 url(../images/trial/icon_anniu_paizhao.png) 13px center no-repeat;
+}
+.belongings-table table td .photo:hover{
+    background: #fe6d10 url(../images/trial/icon_anniu_paizhao.png) 13px center no-repeat;
+}
+.belongings-table table td .view{
+    background: #0093d0 url(../images/trial/icon_anniu_yulan.png) 13px center no-repeat;
+}
+.belongings-table table td .view:hover{
+    background: #fe6d10 url(../images/trial/icon_anniu_yulan.png) 13px center no-repeat;
+}
+.belongings-table table td .del{
+    background: #0093d0 url(../images/trial/icon_anniu_shanchu.png) 13px center no-repeat;
+}
+.belongings-table table td .del:hover{
+    background: #fe6d10 url(../images/trial/icon_anniu_shanchu.png) 13px center no-repeat;
+}
+.belongings-table table td .print{
+    display: inline-block;
+    width: 78px;
+    height: 36px;
+    line-height: 36px;
+    font-size: 15px;
+    color: #fff;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    background: #229b11;
+}
+.belongings-table table td .print:hover{
+    background: #fe6d10;
+}
+
+.items-involved{
+    overflow: hidden;
+    margin-top: 8px;
+}
+
+.storage-btns{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.storage-btns .save,
+.storage-btns .open{
+    display: inline-block;
+    width: 240px;
+    height: 58px;
+    line-height: 58px;
+    border-radius: 3px;
+    font-size: 24px;
+    color: #fff;
+    margin: 20px;
+    cursor: pointer;
+}
+
+.storage-btns .save{
+    background: #fe6d10;
+}
+.storage-btns .save:hover{
+    background: #229b11;
+}
+.storage-btns .open{
+     background: #2163c6;
+}
+.storage-btns .open:hover{
+     background: #0093d0;
+}

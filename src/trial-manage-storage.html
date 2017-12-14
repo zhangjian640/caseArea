@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>审讯管理-财物存管</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/trail-manage.css">
+    <link rel="stylesheet" href="./css/trail-manage-storage.css">
+    <script src="./js/timing.js"></script>
+</head>
+<body>
+<div class="header">
+    办案区智能集控中心
+</div>
+<ul class="nav">
+    <li class="line"></li>
+    <li>当前位置&nbsp;:</li>
+    <li>执法监督平台</li>
+    <li>&gt</li>
+    <li>办案区智能集控中心</li>
+    <li>&gt</li>
+    <li>审讯管理</li>
+    <li>&gt</li>
+    <li>财物存管</li>
+</ul>
+<div class="content">
+    <div class="flow-wrap">
+        <ul class="flow">
+            <li class="green">
+                <div class="bg register"></div>
+                <div class="message">
+                    <div class="title">入区登记</div>
+                    <div class="time">2Hrs13Mins</div>
+                </div>
+            </li>
+            <li class="green">
+                <div class="bg check"></div>
+                <div class="message">
+                    <div class="title">人身检查</div>
+                    <div class="time">5Mins</div>
+                </div>
+            </li>
+            <li class="red">
+                <div class="bg property"></div>
+                <div class="message">
+                    <div class="title">财物存管</div>
+                    <div class="time">2Hrs13Mins</div>
+                </div>
+            </li>
+            <li class="gray">
+                <div class="bg information"></div>
+                <div class="message">
+                    <div class="title">信息采集</div>
+                    <div class="time">2Hrs13Mins</div>
+                </div>
+            <li class="gray">
+                <div class="bg waitingRoom"></div>
+                <div class="message">
+                    <div class="title">候问管理</div>
+                    <div class="time">2Hrs13Mins</div>
+                </div>
+            </li>
+            <li class="gray">
+                <div class="bg requireRoom"></div>
+                <div class="message">
+                    <div class="title">讯/询问管理</div>
+                    <div class="time">2Hrs13Mins</div>
+                </div>
+            </li>
+            <li class="gray">
+                <div class="bg return"></div>
+                <div class="message">
+                    <div class="title">物品返还</div>
+                    <div class="time">2Hrs13Mins</div>
+                </div>
+            </li>
+            <li class="gray">
+                <div class="bg exitRegister"></div>
+                <div class="message">
+                    <div class="title">出区登记</div>
+                    <div class="time">2Hrs13Mins</div>
+                </div>
+            </li>
+        </ul>
+        <div class="progress-wrap">
+            <div class="progress active">
+                <div class="progress-bar  progress-bar-info progress-bar-striped"
+                     role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"
+                     style="width: 80%">
+                </div>
+            </div>
+            <span class="total-time">总耗时4 Hrs 36 Mins</span>
+        </div>
+    </div>
+    <div class="check-body">
+        <div class="title">
+            <div>财物存管</div>
+        </div>
+        <div class="info">
+            <ul class="target">
+                <li>对&nbsp;&nbsp;&nbsp;象：</li>
+                <li>王大峰</li>
+                <li>420111197804125461</li>
+                <li>男</li>
+                <li>31岁</li>
+            </ul>
+            <ul class="handle">
+                <li>办案人：</li>
+                <li>黄小松</li>
+                <li>王欢</li>
+            </ul>
+        </div>
+        <div class="photo">
+            <span>照片</span>
+        </div>
+        <ul class="timing">
+            <li id="hour">01</li>
+            <li id="minutes">01</li>
+            <li id="second">20</li>
+        </ul>
+    </div>
+    <div class="belongings">
+        <div class="aside">
+            <div class="title">随身物品</div>
+        </div>
+        <div class="belongings-table">
+            <table cellspacing="0" cellpadding="0">
+                <thead>
+                <tr>
+                    <th width="32%">物品名称</th>
+                    <th width="10%">数量</th>
+                    <th width="12%">单位</th>
+                    <th width="12%">保管柜号</th>
+                    <th width="34%">操作</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td><input class="input-name" type="text"></td>
+                    <td>
+                        <select name="" class="input-num">
+                            <option value="">数量</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select name="" class="input-dept">
+                            <option value="">单位</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select name="" class="input-case">
+                            <option value="">保管柜号</option>
+                        </select>
+                    </td>
+                    <td>
+                        <div class="photo">拍照</div>
+                        <div class="view">预览</div>
+                        <div class="del">删除</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td><input class="input-name" type="text"></td>
+                    <td>
+                        <select name="">
+                            <option value="">数量</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select name="">
+                            <option value="">单位</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select name="">
+                            <option value="">包管柜号</option>
+                        </select>
+                    </td>
+                    <td>
+                        <div class="photo">拍照</div>
+                        <div class="view">预览</div>
+                        <div class="del">删除</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td><input class="input-name" type="text"></td>
+                    <td>
+                        <select name="">
+                            <option value="">数量</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select name="">
+                            <option value="">单位</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select name="">
+                            <option value="">包管柜号</option>
+                        </select>
+                    </td>
+                    <td>
+                        <div class="photo">拍照</div>
+                        <div class="view">预览</div>
+                        <div class="del">删除</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td><input class="input-name" type="text"></td>
+                    <td>
+                        <select name="">
+                            <option value="">数量</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select name="">
+                            <option value="">单位</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select name="">
+                            <option value="">包管柜号</option>
+                        </select>
+                    </td>
+                    <td>
+                        <div class="photo">拍照</div>
+                        <div class="view">预览</div>
+                        <div class="del">删除</div>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="items-involved">
+        <div class="aside">
+            <div class="title">涉案物品</div>
+        </div>
+        <div class="belongings-table">
+            <table cellspacing="0" cellpadding="0">
+                <thead>
+                <tr>
+                    <th width="25%">物品名称</th>
+                    <th width="10%">数量</th>
+                    <th width="11%">单位</th>
+                    <th width="11%">保管柜号</th>
+                    <th width="43%">操作</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td><input class="short-input" type="text"></td>
+                    <td>
+                        <select name="" class="input-num">
+                            <option value="">数量</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select name="" class="input-dept">
+                            <option value="">单位</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select name="" class="input-case">
+                            <option value="">保管柜号</option>
+                        </select>
+                    </td>
+                    <td>
+                        <div class="photo">拍照</div>
+                        <div class="view">预览</div>
+                        <div class="del">删除</div>
+                        <div class="print">打印条码</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td><input class="short-input" type="text"></td>
+                    <td>
+                        <select name="" class="input-num">
+                            <option value="">数量</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select name="" class="input-dept">
+                            <option value="">单位</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select name="" class="input-case">
+                            <option value="">保管柜号</option>
+                        </select>
+                    </td>
+                    <td>
+                        <div class="photo">拍照</div>
+                        <div class="view">预览</div>
+                        <div class="del">删除</div>
+                        <div class="print">打印条码</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td><input class="short-input" type="text"></td>
+                    <td>
+                        <select name="" class="input-num">
+                            <option value="">数量</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select name="" class="input-dept">
+                            <option value="">单位</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select name="" class="input-case">
+                            <option value="">保管柜号</option>
+                        </select>
+                    </td>
+                    <td>
+                        <div class="photo">拍照</div>
+                        <div class="view">预览</div>
+                        <div class="del">删除</div>
+                        <div class="print">打印条码</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td><input class="short-input" type="text"></td>
+                    <td>
+                        <select name="" class="input-num">
+                            <option value="">数量</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select name="" class="input-dept">
+                            <option value="">单位</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select name="" class="input-case">
+                            <option value="">保管柜号</option>
+                        </select>
+                    </td>
+                    <td>
+                        <div class="photo">拍照</div>
+                        <div class="view">预览</div>
+                        <div class="del">删除</div>
+                        <div class="print">打印条码</div>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="storage-btns">
+        <div class="save">保存</div>
+        <div class="open">一键开柜</div>
+    </div>
+</div>
+
+</body>
+</html>

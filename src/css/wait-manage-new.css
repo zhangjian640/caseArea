@@ -1,0 +1,209 @@
+.wait-manage {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.wait-manage .area-title {
+    height: 55px;
+    line-height: 55px;
+    text-align: center;
+    background: #10529c;
+    color: #fff;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.room-info {
+    width: 958px;
+    margin: 20px auto 0;
+    padding: 20px 21px 0;
+    border-top: 3px solid #f4f7f8;
+    overflow: hidden;
+}
+
+.room-info .wait-room {
+    width: 405px;
+    height: 328px;
+    float: left;
+    padding: 40px 40px;
+    box-sizing: border-box;
+    background: #edf9fd;
+    border: 1px solid #c5e6ff;
+}
+
+.room-info .wait-room li {
+    font-size: 14px;
+    color: #4184d3;
+    line-height: 30px;
+    padding-left: 32px;
+}
+
+.room-info .wait-room li span {
+    padding: 0 15px;
+}
+
+.room-info .wait-room li.title {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 40px;
+    color: #4184d3;
+    padding-left: 0;
+}
+
+.room-info .room-camera {
+    padding-top: 16px;
+    height: 328px;
+    margin-left: 405px;
+    background: #edf9fd;
+    border: 1px solid #c5e6ff;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.room-info .room-camera video {
+    display: inline-block;
+    height: 295px;
+}
+
+.involved-people {
+    width: 958px;
+    margin: 18px auto 0;
+    background: #edfafd;
+}
+
+.involved-people .side {
+    width: 70px;
+    height: 665px;
+    float: left;
+    background: #4085d3;
+}
+
+.involved-people .side span {
+    display: inline-block;
+    width: 26px;
+    padding-left: 22px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    padding-top: 225px;
+}
+
+.involved-people .peoples {
+    margin-left: 70px;
+    border-top: 1px solid #c8e3ff;
+    border-right: 1px solid #c8e3ff;
+    border-bottom: 1px solid #c8e3ff;
+}
+
+.involved-people .peoples .photo {
+    float: left;
+}
+
+.involved-people .peoples .photo > img {
+    width: 119px;
+    height: 149px;
+    border: 1px solid #cae2ff;
+
+}
+
+.involved-people .peoples .photo > div {
+    font-size: 18px;
+    color: #4184d3;
+    text-align: center;
+}
+
+.involved-people .peoples {
+    overflow: hidden;
+}
+
+.involved-people .peoples > li {
+    width: 400px;
+    margin: 18px 15px 0;
+    overflow: hidden;
+    float: left;
+}
+
+.involved-people .peoples .info {
+    margin-left: 143px;
+}
+
+.involved-people .peoples .info li {
+    color: #4184d3;
+    font-size: 14px;
+    line-height: 26px;
+}
+
+.involved-people .peoples .info .space{
+    padding-left: 10px;
+}
+
+.involved-people .peoples .info .long-space{
+    padding-left: 20px;
+}
+
+.involved-people .peoples .info .send {
+    width: 110px;
+    margin-left: 50px;
+    height: 33px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    line-height: 33px;
+    font-size: 18px;
+    color: #fff;
+    background: url(../images/houwen_btn.png) no-repeat;
+    cursor: pointer;
+}
+
+.involved-people .peoples .info .send:hover {
+    background: url(../images/houwen_btn_hover.png) no-repeat;
+}
+
+.police-wrap{
+    width: 958px;
+    margin: 18px auto 0;
+    background: #edfafd;
+    overflow: hidden;
+}
+
+.police-wrap .side {
+    width: 70px;
+    height: 243px;
+    float: left;
+    background: #4085d3;
+}
+
+.police-wrap .side span {
+    display: inline-block;
+    width: 26px;
+    padding-left: 22px;
+    padding-top: 50px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.police-wrap .polices{
+    height: 242px;
+    margin-left: 70px;
+    border-top: 1px solid #c8e3ff;
+    border-right: 1px solid #c8e3ff;
+    border-bottom: 1px solid #c8e3ff;
+    overflow: hidden;
+}
+.police-wrap .polices li{
+    margin-top: 30px;
+    margin-left: 52px;
+    float: left;
+}
+.police-wrap .polices li img{
+    width: 119px;
+    height: 149px;
+    border: 1px solid #cae2ff;
+}
+
+.police-wrap .polices li div{
+    font-size: 18px;
+    color: #4184d3;
+    text-align: center;
+}

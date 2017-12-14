@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>入区登记</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/area-register.css">
+</head>
+<body>
+<div class="main">
+    <div class="area-title">入区登记</div>
+    <div class="area-content">
+        <table cellspacing="0" cellpadding="0">
+            <thead>
+            <tr>
+                <th width="6%"></th>
+                <th width="18%">抓拍人脸</th>
+                <th width="18%">对比人员</th>
+                <th width="58%">操作</th>
+            </tr>
+            </thead>
+            <tbody class="tbody">
+            <tr>
+            <td><input type="checkbox"></td>
+            <td class="origin">
+                <div class="img-wrap">
+                    <img src="./images/people1.png" alt="">
+                </div>
+            </td>
+            <td>
+                <div class="img-wrap">
+                    <img src="./images/people1.png" alt="">
+                </div>
+                <div class="message">
+                    <div class="name">王五</div>
+                    <div class="idCard">420111197905122461</div>
+                </div>
+            </td>
+            <td>
+                <select class="choice">
+                    <option value="">涉案人员</option>
+                    <option value="">xxx人员</option>
+                </select>
+                <span class="re-audit">重新审核</span>
+                <span class="re-send">发放手环</span>
+            </td>
+            </tr>
+            <tr>
+            <td><input type="checkbox"></td>
+            <td class="origin">
+                <div class="img-wrap">
+                    <img src="./images/people1.png" alt="">
+                </div>
+            </td>
+            <td>
+                <div class="img-wrap">
+                    <img src="./images/people1.png" alt="">
+                </div>
+                <div class="message">
+                    <div class="name">王五</div>
+                    <div class="idCard">420111197905122461</div>
+                </div>
+            </td>
+            <td>
+                <select class="choice">
+                    <option value="">涉案人员</option>
+                    <option value="">xxx人员</option>
+                </select>
+                <span class="re-audit">重新审核</span>
+                <span class="re-send">发放手环</span>
+            </td>
+            </tr>
+            <tr>
+            <td><input type="checkbox"></td>
+            <td class="origin">
+                <div class="img-wrap">
+                    <img src="./images/people1.png" alt="">
+                </div>
+            </td>
+            <td>
+                <div class="img-wrap">
+                    <img src="./images/people1.png" alt="">
+                </div>
+                <div class="message">
+                    <div class="name">王五</div>
+                    <div class="idCard">420111197905122461</div>
+                </div>
+            </td>
+            <td>
+                <select class="choice">
+                    <option value="">涉案人员</option>
+                    <option value="">xxx人员</option>
+                </select>
+                <span class="re-audit">重新审核</span>
+                <span class="re-send">发放手环</span>
+            </td>
+            </tr>
+            <tr>
+            <td><input type="checkbox"></td>
+            <td class="origin">
+                <div class="img-wrap">
+                    <img src="./images/people1.png" alt="">
+                </div>
+            </td>
+            <td>
+                <div class="img-wrap">
+                    <img src="./images/people1.png" alt="">
+                </div>
+                <div class="message">
+                    <div class="name">王五</div>
+                    <div class="idCard">420111197905122461</div>
+                </div>
+            </td>
+            <td>
+                <select class="choice">
+                    <option value="">涉案人员</option>
+                    <option value="">xxx人员</option>
+                </select>
+                <span class="re-audit">重新审核</span>
+                <span class="re-send">发放手环</span>
+            </td>
+            </tr>
+            </tbody>
+        </table>
+        <div class="summit"></div>
+        <div class="load-more"></div>
+    </div>
+
+</div>
+<script src="js/jquery-1.9.0.js"></script>
+<script>
+/*
+    ~function () {
+      var index = 0; // 分页从0开始
+      var isEnd = false; // 判断是否加载完
+      // 初始化调用
+      getMessage(index);
+
+      // 点击加载更多按钮加载数据
+      $('.load-more').click(function () {
+        if (isEnd === true) {
+          return;
+        }
+        index++;
+        getMessage(index)
+      });
+
+      // 监听滚动条高度加载数据
+      $(window).scroll(function () {
+        if (isEnd === true) {
+          return;
+        }
+
+        // 当滚动到最底部以上100像素时， 加载新内容
+        // 核心代码
+        if ($(document).height() - $(this).scrollTop() - $(this).height() < 200) {
+          index++;
+          getMessage(index);
+        }
+      });
+
+      // ajax请求数据
+      function getMessage(index) {
+        $.ajax({
+            url: "http://192.168.1.118:3003/getMessage",
+            data: {
+              page: index
+            },
+            dataType: "json",
+            success: function (data) {
+              if (data.length === 0) {
+                isEnd = true;
+                $('.load-more').hide();
+                return;
+              } else {
+                $('.load-more').show();
+              }
+              render(data);
+            }
+          }
+        )
+      }
+
+      // 渲染DOM
+      function render(data) {
+        var html = '';
+        for (var i = 0; i < data.length; i++) {
+          var item = data[i];
+          console.table(item);
+          var peoples = item.peoples;
+          var peopleItem = '';
+          if(peoples.length ===0){
+            peopleItem = `
+             <td>
+                    <div class="img-wrap">
+                        <img src="./images/default.png" alt="">
+
+                    </div>
+                    <div class="message">
+                        <div class="name">暂无图片</div>
+                    </div>
+                </td>
+                <td>
+                    <div class="img-wrap">
+                        <img src="./images/default.png" alt="">
+                    </div>
+                    <div class="message">
+                        <div class="name">暂无图片</div>
+                    </div>
+                </td>
+                <td>
+                    <div class="img-wrap">
+                        <img src="./images/default.png" alt="">
+                    </div>
+                    <div class="message">
+                        <div class="name">暂无图片</div>
+                    </div>
+                </td>
+
+            `
+          } else {
+            for (var j = 0; j < peoples.length; j++) {
+              var curPeople = peoples[j];
+              peopleItem = `
+                        <td>
+                    <div class="img-wrap">
+                        <img src="./images/${curPeople.photo}" alt="">
+                    </div>
+                    <div class="message">
+                        <div class="name">${curPeople.name}</div>
+                        <div class="idCard">${curPeople.idCard}</div>
+                    </div>
+                </td>
+                <td>
+                    <div class="img-wrap">
+                        <img src="./images/${curPeople.photo}" alt="">
+                    </div>
+                    <div class="message">
+                         <div class="name">${curPeople.name}</div>
+                        <div class="idCard">${curPeople.idCard}</div>
+                    </div>
+                </td>
+                <td>
+                    <div class="img-wrap">
+                        <img src="./images/${curPeople.photo}" alt="">
+                    </div>
+                    <div class="message">
+                         <div class="name">${curPeople.name}</div>
+                        <div class="idCard">${curPeople.idCard}</div>
+                    </div>
+                </td>
+        `
+            }
+          }
+
+          html += `<tr>
+                <td>
+                    <div class="img-wrap">
+                        <img src="./images/${item.origin}" alt="">
+                    </div>
+                </td>
+                 ${peopleItem}
+                <td>
+                    <div class="summit"></div>
+                </td>
+            </tr>`;
+        }
+        $('.tbody').append(html);
+      }
+    }();
+*/
+</script>
+</body>
+</html>

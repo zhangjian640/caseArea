@@ -1,0 +1,179 @@
+.wait-manage {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.wait-manage .area-title {
+    height: 55px;
+    line-height: 55px;
+    text-align: center;
+    background: #10529c;
+    color: #fff;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.manage-wrap{
+    width: 958px;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 25px;
+    padding-left: 21px;
+    padding-right: 21px;
+    height: 158px;
+    border-top: 3px solid #f4f7f8;
+}
+.manage-wrap .wait-room{
+    width: 324px;
+    float: left;
+    background: #edf9fd;
+    border: 1px solid #cae2ff;
+    box-sizing: border-box;
+}
+
+.manage-wrap .wait-room .room-name{
+    width: 132px;
+    height: 157px;
+    line-height: 158px;
+    background: #edf9fd url(../images/icon_fangjian_num.png) center no-repeat;
+    position: relative;
+    border-right: 1px solid #cae2ff;
+    float: left;
+    box-sizing: border-box;
+}
+
+
+.manage-wrap .wait-room .room-name .room-count{
+    position: absolute;
+    margin: 0 auto;
+    top: 11px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
+}
+
+.manage-wrap .wait-room .room-msg{
+    height: 157px;
+    margin-left: 140px;
+    border-left: 1px solid #cae2ff;
+    box-sizing: border-box;
+}
+
+.manage-wrap .room-msg ul{
+    padding: 15px;
+}
+.manage-wrap .room-msg ul li{
+    line-height: 30px;
+    font-size: 14px;
+    color: #10509c;
+    position: relative;
+}
+.manage-wrap .room-msg ul li .align{
+    display: inline-block;
+    position: absolute;
+    left: 80px;
+}
+
+.manage-wrap .room-msg ul li .num{
+    color: #33a6e7;
+    padding-right: 20px;
+}
+
+.manage-wrap .wait-people{
+    margin-left: 380px;
+
+}
+
+.manage-wrap .wait-people ul li{
+    line-height: 55px;
+    font-size: 18px;
+    color: #575757
+}
+
+.manage-wrap .wait-people ul li:nth-of-type(2){
+
+    border-top: 2px dashed #c9c9c9;
+    border-bottom: 2px dashed #c9c9c9;
+}
+
+.manage-wrap .wait-people li .value{
+    color: #10509c;
+    padding-right: 60px;
+}
+
+.manage-content{
+    width: 958px;
+    margin: 20px auto 0;
+    border: 1px solid #c8e3ff;
+    background: #edf9fd;
+    text-align: center;
+}
+.manage-content .title{
+    display: inline-block;
+    width: 215px;
+    height: 48px;
+    line-height: 48px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 24px;
+    background: #4184d3;
+    margin-top: -1px;
+    color: #fff;
+}
+.manage-content .photos{
+    margin: 12px 48px 50px;
+    overflow: hidden;
+}
+
+.manage-content .photos li{
+    width: 119px;
+    height: 180px;
+    margin: 22px 12px 0 12px;
+    float: left;
+    position: relative;
+}
+.manage-content .photos .mark{
+    width: 31px;
+    height: 31px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.manage-content .photos li.active .photo{
+    border: 3px solid #13be1e;
+}
+
+.manage-content .photos li .photo{
+    width: 119px;
+    height: 148px;
+    border: 1px solid #c8e3ff;
+    box-sizing: border-box;
+}
+.manage-content .photos li .name{
+    color: #10509c;
+    font-size: 18px;
+    width: 119px;
+    height: 148px;
+    text-align: center;
+}
+
+.summit {
+    position: fixed;
+    top: 50%;
+    margin-left: 1020px;
+    width: 149px;
+    height: 135px;
+    background: url(../images/btn_tijiao_jiaojie.png) no-repeat;
+    cursor: pointer;
+}
+
+.summit:hover {
+    width: 149px;
+    height: 135px;
+    background: url(../images/btn_tijiao_jiaojie_hover.png) no-repeat;
+    cursor: pointer;
+}

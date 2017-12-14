@@ -1,0 +1,119 @@
+.main {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.area-title {
+    height: 55px;
+    line-height: 55px;
+    text-align: center;
+    background: #10529c;
+    color: #fff;
+    font-size: 22px;
+    font-weight: bold;
+}
+.area-content{
+    margin-top: 20px;
+}
+.area-content table {
+    width: 100%;
+}
+
+.area-content table th {
+    height: 45px;
+    line-height: 45px;
+    font-size: 18px;
+    color: #fff;
+    background: #74b5e8;
+    text-align: center;
+    border: 1px solid #a8ceec;
+}
+
+.area-content table td {
+    height: 222px;
+    text-align: center;
+    border-bottom: 1px solid #a8ceec;
+    border-right: 1px solid #a8ceec;
+}
+
+.area-content table td:first-child {
+    border-left: 1px solid #a8ceec;
+    border-right: 1px solid #a8ceec;
+}
+
+.area-content table .img-wrap {
+    width: 105px;
+    height: 132px;
+    border: 1px solid #a8ceec;
+    margin: auto;
+}
+
+
+.area-content table .origin {
+    vertical-align: top;
+    padding-top: 24px;
+    box-sizing: border-box;
+}
+
+.area-content table td img {
+    width: 105px;
+}
+
+.area-content .message .name,
+.area-content .message .idCard {
+    text-align: center;
+    color: #10509c;
+}
+
+.area-content .choice{
+    width: 150px;
+    height: 30px;
+}
+
+.area-content .re-audit,
+.area-content .re-send {
+    display: inline-block;
+    border-radius: 3px;
+    width: 170px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 16px;
+    color: #fff;
+    background: #2262c7;
+    cursor: pointer;
+}
+.area-content .re-audit:hover{
+    background: #FF6B11;
+}
+
+.area-content .re-send:hover{
+    background: #00dd1c;
+}
+.area-content .re-audit{
+    box-sizing: border-box;
+    margin: 0 10px;
+}
+.summit {
+    position: fixed;
+    top: 50%;
+    margin-left: 1020px;
+    width: 122px;
+    height: 112px;
+    background: url(../images/btn_rqdj.png) no-repeat;
+    cursor: pointer;
+}
+
+.summit:hover {
+    width: 122px;
+    height: 112px;
+    background: url(../images/btn_rqdj_hover.png) no-repeat;
+    cursor: pointer;
+}
+
+.load-more {
+    width: 194px;
+    height: 80px;
+    background: url(../images/btn_more.png) no-repeat;
+    margin: 0 auto;
+}

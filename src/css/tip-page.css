@@ -1,0 +1,206 @@
+@charset "utf-8";
+
+body{
+    background-image: url(../images/tip_page/beijing.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+/*page1-入区登记*/
+
+.tips-login li{
+    text-align: center;
+}
+
+.tips-login li:nth-of-type(1){
+    margin-top: 220px;
+}
+.tips-login li:nth-of-type(2){
+    margin-top: 8px;
+}
+.tips-login li:nth-of-type(3){
+    margin-top: 8px;
+}
+.tips-login li:nth-of-type(4){
+    margin-top: 100px;
+}
+.tips-login li:nth-of-type(5){
+    margin-top: 100px;
+}
+
+/*page2-身份核验*/
+
+.tips-confirm > li{
+    text-align: center;
+}
+
+.tips-confirm > li:nth-of-type(1){
+    margin-top: 220px;
+}
+.tips-confirm > li:nth-of-type(2){
+    margin-top: 8px;
+}
+.tips-confirm > li:nth-of-type(3){
+    margin-top: 8px;
+}
+.tips-confirm > li:nth-of-type(4){
+    margin-top: 60px;
+}
+.tips-confirm > li:nth-of-type(5){
+    margin-top: 100px;
+}
+
+.tips-confirm .message{
+    width: 1200px;
+    position: relative;
+    left: 50%;
+    margin-left: -450px;
+    overflow: hidden;
+}
+
+.tips-confirm .message .photos{
+    width: 408px;
+    float: left;
+}
+
+.tips-confirm .message .photos .photo{
+    width: 194px;
+    display: inline-block;
+    font-size: 0;
+}
+
+.tips-confirm .message .photos .photo img{
+    width: 194px;
+    border: 2px solid #05d5e8;
+    box-sizing: border-box;
+}
+
+.tips-confirm .message .photos .photo .name{
+    height: 65px;
+    line-height: 65px;
+    background: #040641;
+    color: #fff;
+    font-size: 30px;
+}
+.tips-confirm .message .info{
+    margin-left: 450px;
+}
+
+.tips-confirm .message .info li{
+    text-align: left;
+    font-size: 30px;
+    line-height: 60px;
+}
+
+.tips-confirm .message .info .label{
+    color: #05abd7;
+}
+
+.tips-confirm .message .info .value{
+    color: #c9cce8;
+}
+
+.tips-confirm .message .info .address{
+    position: relative;
+}
+
+.tips-confirm .message .info .address .value{
+    position: absolute;
+}
+
+/* page3-随身物品存管*/
+
+.tips-keep > li{
+    text-align: center;
+}
+
+.tips-keep > li:nth-of-type(1){
+    margin-top: 220px;
+}
+.tips-keep > li:nth-of-type(2){
+    margin-top: 8px;
+}
+.tips-keep > li:nth-of-type(3){
+    margin-top: 8px;
+}
+.tips-keep > li:nth-of-type(4){
+    margin-top: 60px;
+}
+.tips-keep > li:nth-of-type(5){
+    margin-top: 35px;
+}
+
+.tips-keep .message{
+    width: 1200px;
+    position: relative;
+    left: 50%;
+    margin-left: -450px;
+    overflow: hidden;
+}
+
+.tips-keep .message .photos{
+    width: 565px;
+    float: left;
+}
+
+.tips-keep .message .photos img{
+    display: block;
+    width: 565px;
+}
+
+.tips-keep .message .photos .name{
+    height: 65px;
+    line-height: 65px;
+    background: #040641;
+    color: #fff;
+    font-size: 30px;
+}
+.tips-keep .message .info{
+    margin-left: 648px;
+    margin-top: 40px;
+}
+
+.tips-keep .message .info li{
+    text-align: left;
+    font-size: 30px;
+    line-height: 60px;
+}
+
+.tips-keep .message .info .label{
+    color: #05abd7;
+}
+
+.tips-keep .message .info .value{
+    color: #c9cce8;
+}
+
+.tips-keep .message .info .address{
+    position: relative;
+}
+
+.tips-keep .message .info .address .value{
+    position: absolute;
+}
+
+/*page4-伤痕抓拍*/
+
+.tips-snap-shot li{
+    text-align: center;
+}
+
+.tips-snap-shot li:nth-of-type(1){
+    margin-top: 220px;
+}
+.tips-snap-shot li:nth-of-type(2){
+    margin-top: 8px;
+}
+.tips-snap-shot li:nth-of-type(3){
+    margin-top: 8px;
+}
+.tips-snap-shot li:nth-of-type(4){
+    margin-top: 55px;
+}
+.tips-snap-shot li:nth-of-type(5){
+    margin-top: 80px;
+}

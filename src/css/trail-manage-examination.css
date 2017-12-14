@@ -1,0 +1,265 @@
+@charset "utf-8";
+
+body {
+    background: none;
+    color: #000;
+    overflow-x: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+.header {
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+    background-color: #33a6e7;
+}
+
+.nav {
+    width: 100%;
+    height: 45px;
+    background-color: #0a396f;
+    overflow: hidden;
+}
+
+.nav li {
+    float: left;
+    height: 45px;
+    line-height: 45px;
+    margin: 0 5px;
+    color: #fff;
+    font-size: 18px;
+}
+
+.nav .line {
+    width: 45px;
+    height: 45px;
+    background: url(../images/trial/icon_daohang.png) no-repeat center;
+}
+
+.content {
+    width: 1000px;
+    margin: 10px auto 0;
+}
+
+/**/
+.content .check-body {
+    width: 100%;
+    height: 145px;
+    margin-top: 30px;
+    overflow: hidden;
+    border-bottom: 3px solid #f4f7f8;
+}
+
+.check-body .title {
+    width: 140px;
+    height: 140px;
+    background: #10509c;
+    font-weight: bold;
+    font-size: 36px;
+    color: #fff;
+}
+
+.check-body .title,
+.check-body .info,
+.check-body .photo {
+    float: left;
+}
+
+.check-body .title div {
+    padding: 19px 0 0 34px;
+}
+
+.check-body .info {
+    width: 430px;
+    padding-top: 57px;
+}
+
+.check-body .info .target {
+    height: 32px;
+    overflow: hidden;
+}
+
+.check-body .info .handle {
+    height: 32px;
+    margin-top: 10px;
+    overflow: hidden;
+}
+
+.check-body .info .target li,
+.check-body .info .handle li {
+    float: left;
+    line-height: 30px;
+    background: #edf9fd;
+    color: #33a6e7;
+}
+
+.check-body .info .target li:first-child,
+.check-body .info .handle li:first-child {
+    width: 95px;
+    text-indent: 12px;
+    font-size: 18px;
+    color: #1251b4;
+    text-align: justify;
+    border: none;
+    padding: 0;
+    margin: 0;
+    background: none;
+}
+
+.check-body .info .target li {
+    border-left: 1px solid #c9e2ff;
+    border-top: 1px solid #c9e2ff;
+    border-bottom: 1px solid #c9e2ff;
+    padding: 0 5px;
+}
+
+.check-body .info .target li + li + li + li + li {
+    border-right: 1px solid #c9e2ff;
+}
+
+.check-body .info .handle li {
+    border: 1px solid #c9e2ff;
+    padding: 0 5px;
+    margin-right: 5px;
+}
+
+.check-body .photo {
+    width: 106px;
+    height: 134px;
+    border: 1px solid #c9e2ff;
+}
+
+.check-body .photo span {
+    width: 20px;
+    display: block;
+    margin: 35% auto;
+    font-size: 20px;
+    text-align: center;
+    color: gray;
+}
+
+.check-body .timing {
+    width: 304px;
+    height: 76px;
+    margin-top: 62px;
+    float: right;
+    overflow: hidden;
+    background: url(../images/trial/jishi_bg.png) no-repeat;
+}
+
+.check-body .timing li {
+    float: left;
+    width: 83px;
+    color: #fff;
+    line-height: 76px;
+    font-size: 56px;
+    font-weight: bold;
+    margin-left: 27px;
+    text-align: center;
+}
+
+.check-body .timing li:first-child {
+    margin-left: 0;
+}
+
+.examination{
+    overflow: hidden;
+}
+.examination li{
+    width: 490px;
+    margin-top: 19px;
+    float: left;
+}
+.examination li:nth-of-type(2n){
+    float: right;
+}
+.examination li .aside{
+    width: 64px;
+    height: 333px;
+    background: #edf9fd;
+    border: 1px solid #c9e2ff;
+    box-sizing: border-box;
+    float: left;
+    position: relative;
+}
+
+.examination li .aside .title{
+    margin-left: 8px;
+    width: 48px;
+    font-size: 30px;
+    color: #4184d3;
+    padding-top: 80px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.examination li .aside .take-photo{
+    position: absolute;
+    bottom: 5px;
+    width: 52px;
+    margin-top: 10px;
+    margin-left: 6px;
+    cursor: pointer;
+}
+
+.examination li:nth-of-type(1) .aside .title{
+    background: url('../images/trial/icon_tijian_jk.png') center 35px no-repeat;
+}
+
+.examination li:nth-of-type(2) .aside .title{
+    background: url('../images/trial/icon_tijian_heart.png') center 35px no-repeat;
+}
+
+.examination li:nth-of-type(3) .aside .title{
+    background: url('../images/trial/icon_tijian_X.png') center 35px no-repeat;
+}
+
+.examination li:nth-of-type(4) .aside .title{
+    background: url('../images/trial/icon_tijian_blood.png') center 35px no-repeat;
+}
+
+.examination li:nth-of-type(5) .aside .title{
+    background: url('../images/trial/icon_tijian_B.png') center 35px no-repeat;
+}
+
+.examination li .section{
+    width: 412px;
+    height: 333px;
+    border:1px solid #c7e4fd;
+    box-sizing: border-box;
+    margin-left: 74px;
+}
+
+.examination li .section .img-wrap img{
+    width: 100%;
+}
+
+.examination li .section .input-wrap textarea{
+    width: 100%;
+    border: none;
+    font-size: 14px;
+    color: #4184d3;
+    text-indent: 10px;
+}
+
+.close-btn{
+    width: 238px;
+    height: 58px;
+    margin: 40px auto;
+    background: #2262C7;
+    border-radius: 3px;
+    color: #fff;
+    font-size: 24px;
+    text-align: center;
+    line-height: 58px;
+    cursor: pointer;
+}
+
+.close-btn:hover{
+    background: #FF6B11;
+}

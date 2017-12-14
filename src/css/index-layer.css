@@ -1,0 +1,315 @@
+@charset "utf-8";
+
+@keyframes show-box {
+    0% {
+        transform: scale(.3);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.layer-main {
+    width: 1120px;
+    height: 938px;
+    margin: 0 auto;
+    overflow: hidden;
+    /*background: url(../images/new_index/baq_bg.jpg) no-repeat;*/
+    background-size: cover;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    animation: show-box 1s;
+    position: absolute;
+    z-index: 100;
+    bottom: 0;
+    right: 15px;
+    display: none;
+}
+
+.video-info {
+    height: 328px;
+}
+
+/*视频区*/
+
+.count-people {
+    width: 526px;
+    height: 328px;
+    font-size: 0;
+    float: left;
+}
+
+.count-people .title {
+    display: inline-block;
+    vertical-align: top;
+    width: 75px;
+    height: 328px;
+    font-size: 24px;
+    color: #fff;
+    direction: rtl !important;
+    direction: inherit;
+    writing-mode: tb-rl;
+    padding-right: 20px;
+    padding-top: 30px;
+    letter-spacing: 4px;
+    text-align: center;
+    font-weight: bold;
+    box-sizing: border-box;
+}
+
+.count-people .video {
+    width: 450px;
+    height: 328px;
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+}
+
+.count-people .title {
+    background: #0c4d94 url(../images/new_index/icon_shishi.png) center 28px no-repeat;
+}
+
+.area-info {
+    width: 286px;
+    margin-left: 12px;
+    float: left;
+}
+
+.area-info .use-title {
+    width: 286px;
+    height: 52px;
+    overflow: hidden;
+}
+
+.area-info .use-content{
+    overflow: hidden;
+}
+
+.area-info .use-title .title-left {
+    box-sizing: border-box;
+    width: 180px;
+    height: 52px;
+    line-height: 52px;
+    padding-left: 40px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    background: #052b53 url(../images/new_index/icon_tongji.png) 10px center no-repeat;
+    float: left;
+}
+
+.area-info .use-title .title-right {
+    width: 100px;
+    height: 52px;
+    background: #223a67;
+    float: right;
+}
+
+.area-info .use-content {
+    margin-top: 7px;
+}
+
+.polices {
+    width: 283px;
+    margin-left: 12px;
+    float: right;
+}
+
+.polices .police-title {
+    width: 283px;
+    height: 52px;
+    overflow: hidden;
+}
+
+.polices .police-title .title-left {
+    box-sizing: border-box;
+    width: 177px;
+    height: 52px;
+    line-height: 52px;
+    padding-left: 40px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    background: #052b53 url(../images/new_index/icon_minjin.png) 10px center no-repeat;
+    float: left;
+}
+
+.polices .police-title .title-right {
+    width: 101px;
+    height: 52px;
+    background: #223a67;
+    float: right;
+}
+
+.polices .police-content {
+    width: 283px;
+    height: 269px;
+    overflow: hidden;
+    background: #052b53;
+    margin-top: 7px;
+}
+.polices .police-content ul{
+}
+
+.polices .police-content li{
+    margin-top: 50px;
+    width: 100%;
+    color: #aac9f1;
+    font-size: 16px;
+    text-align: center;
+    cursor: move;
+}
+
+.police-content .swiper-button-next,
+.police-content .swiper-button-prev{
+    background-size: 50%;
+}
+
+.polices .police-content li img{
+    width: 119px;
+    height: 149px;
+}
+
+.use-content .wait-room {
+    width: 286px;
+    height: 271px;
+    float: left;
+    box-sizing: border-box;
+    background: #052b53;
+    padding-top:6px;
+}
+
+.use-content .room1{
+    height: 104px;
+}
+.use-content .room2{
+    margin-top: 2px;
+    height: 163px;
+}
+.use-content .wait-room li {
+    font-size: 16px;
+    color: #aac9f1;
+    line-height: 30px;
+    padding-left: 52px;
+}
+
+.use-content .wait-room li span {
+    padding: 0 15px;
+}
+
+.use-content .wait-room li.title {
+    font-size: 16px;
+    font-weight: bold;
+    /*line-height: 43px;*/
+    padding-left: 20px;
+}
+.use-content .wait-room li.title:nth-of-type(2){
+    border-top: 1px solid #365989;
+}
+
+.involve {
+    background: #052b53;
+    margin-top: 14px;
+}
+
+.involve .side {
+    width: 75px;
+    height: 592px;
+    float: left;
+    background: #4085d3;
+}
+
+.involve .side .title {
+    margin-left: 21px;
+    width: 34px;
+    font-size: 30px;
+    color: #fff;
+    padding-top: 220px;
+    background: url('../images/new_index/icon_shean.png') 0 170px no-repeat;
+}
+
+.involve .peoples {
+    height: 592px;
+    margin-left: 75px;
+    overflow: hidden;
+}
+
+.involve .peoples .photo {
+    float: left;
+}
+
+.involve .peoples .photo > img {
+    width: 119px;
+    height: 149px;
+
+}
+
+.involve .peoples .photo > div {
+    font-size: 18px;
+    color: #aac9f1;
+    text-align: center;
+}
+
+.involve .peoples > li {
+    width: 450px;
+    margin: 13px 15px 0 55px;
+    overflow: hidden;
+    float: left;
+}
+
+.involve .peoples .info {
+    margin-left: 143px;
+    margin-top: 10px;
+}
+
+.involve .peoples .info li {
+    color: #aac9f1;
+    font-size: 14px;
+    line-height: 26px;
+}
+
+.involve .peoples .info .space{
+    padding-left: 10px;
+}
+
+.involve .peoples .info .long-space{
+    padding-left: 20px;
+}
+
+/*视频弹出框*/
+.layer-video{
+    width: 1120px;
+    height: 738px;
+    margin: 0 auto;
+    overflow: hidden;
+    animation: show-box 1s;
+    position: absolute;
+    z-index: 100;
+    bottom: 80px;
+    right: 15px;
+    background: #052b53;
+    display: none;
+}
+
+.layer-video .close-video{
+    position: absolute;
+    right: 10px;
+    top:10px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+.layer-video .close-video img{
+    width: 100%;
+}
+.layer-video .video{
+    width: 1000px;
+    margin: 100px auto 0;
+}
+.layer-video .video video{
+    width: 1000px;
+}

@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>武汉市公安局办案智能管控平台(青山办案中心)</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/index_old2.css">
+</head>
+<body>
+<div class="wrap">
+    <div class="header">
+        <div class="logo"></div>
+    </div>
+    <div class="main">
+        <div class="main-left">
+            <div class="use-title">
+                <div class="title-left">办案区使用情况</div>
+                <div class="title-right"></div>
+            </div>
+            <div class="use-content">
+                <div class="case-num-wrap">
+                    <div class="count-num">
+                        <div class="title">当前办案人数：</div>
+                        <div class="count-box">3</div>
+                    </div>
+                    <div class="case-count">
+                        <img src="./images/new_index/icon_num1.png" alt="">
+                        <img src="./images/new_index/icon_num1.png" alt="">
+                        <img src="./images/new_index/icon_num1.png" alt="">
+                        <img src="./images/new_index/icon_num1.png" alt="">
+                        <img src="./images/new_index/icon_num1.png" alt="">
+                    </div>
+                </div>
+                <div class="case-people-wrap">
+                    <div class="count-num">
+                        <div class="title">当前涉案人数：</div>
+                        <div class="count-box">13</div>
+                    </div>
+                    <div class="case-count">
+                        <img src="./images/new_index/icon_num2.png" alt="">
+                        <img src="./images/new_index/icon_num2.png" alt="">
+                        <img src="./images/new_index/icon_num2.png" alt="">
+                        <img src="./images/new_index/icon_num2.png" alt="">
+                        <img src="./images/new_index/icon_num2.png" alt="">
+                    </div>
+                </div>
+                <div class="police-wrap">
+                    <span class="title">中心值班民警：</span>
+                    <span class="name">李瑶</span>
+                </div>
+                <div class="police-wrap">
+                    <span class="title">值班领导</span>
+                    <span class="name">王云</span>
+                </div>
+                <div class="line-stack" id="echarts"></div>
+            </div>
+        </div>
+        <div class="main-center">
+            <div class="center-title-wrap">
+                <div class="title-icon"></div>
+                <div class="title">武汉市公安局办案智能管控平台(青山办案中心)</div>
+                <div class="date-time">当前时间</div>
+                <div class="date-value">
+                    <input type="text" value="2017-11-10 00:00:00" readonly>
+                </div>
+            </div>
+            <div class="center-content">
+                <div class="content-area">
+                    <div class="using">
+                        <span class="use-key">使用中: </span>
+                        <span class="icon-use"></span>
+                        <span class="use-value">3</span>
+                        <span class="no-use-key">未使用: </span>
+                        <span class="icon-no-use"></span>
+                        <span class="no-use-value">25</span>
+                    </div>
+                    <div class="precinct">
+                        <div class="title">管理区</div>
+                        <ul class="area">
+                            <li>入口交接区</li>
+                            <li>等候区</li>
+                            <li class="active">随身物品存管室</li>
+                            <li class="on">人身安全检查室</li>
+                            <li class="active">信息采集室</li>
+                            <li>化验室</li>
+                            <li>心电图室</li>
+                            <li>X光室</li>
+                            <li>B超室</li>
+                            <li>机房</li>
+                        </ul>
+                    </div>
+                    <div class="space">室外活动空间</div>
+                    <div class="case-area">
+                        <div class="title">审讯办案区</div>
+                        <ul class="area">
+                            <li>辨认室</li>
+                            <li class="active">接待大厅</li>
+                            <li class="on">缉毒检查室</li>
+                            <li class="on active">特殊讯问室</li>
+                            <li>询问室1</li>
+                            <li>询问室2</li>
+                            <li>询问室3</li>
+                            <li>询问室4</li>
+                            <li>讯问室1</li>
+                            <li>讯问室2</li>
+                            <li>讯问室3</li>
+                            <li>讯问室4</li>
+                            <li>讯问室5</li>
+                            <li>讯问室6</li>
+                            <li>讯问室7</li>
+                            <li>讯问室8</li>
+                            <li>讯问室9</li>
+                            <li>讯问室10</li>
+                        </ul>
+                    </div>
+                    <div class="area-info">
+                        <div class="room">
+                            <span class="room-name">询问室5</span>
+                        </div>
+                        <ul class="info">
+                           <li>当前办案人：李云 张丽</li>
+                           <li>当前被讯问人：李磊</li>
+                           <li>开始询问时间：2017.11.10 10：34：32</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="content-video">
+                    <div class="analysis">
+                        <div class="title">
+                            智能分析视频
+                        </div>
+                        <div class="video">
+                            <video src="./video.mp4" autoplay style="width: 360px;"></video>
+                        </div>
+                    </div>
+                    <div class="real-time">
+                        <div class="title">
+                            实时视频监控
+                        </div>
+                        <div class="video">
+                            <video src="./video.mp4" autoplay style="width: 360px;"></video>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-right">
+            <ul>
+                <li><img src="./images/new_index/btn_rydw.png" alt=""></li>
+                <li><img src="./images/new_index/btn_xtsx.png" alt=""></li>
+                <li><img src="./images/new_index/btn_sssp.png" alt=""></li>
+            </ul>
+        </div>
+    </div>
+    <div class="information">
+        <div class="docket">
+            <div class="title">
+                <span class="keys">在审案件</span>
+                <span class="num">(<span class="inner">4</span>)</span>
+            </div>
+            <div class="docket-table">
+                <table cellpadding="0" cellspacing="0">
+                    <thead>
+                    <tr>
+                        <th>涉案人员</th>
+                        <th>进入办案区时间</th>
+                        <th>进入办案区原由</th>
+                        <th>办案阶段</th>
+                        <th>办案人</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>王小虎</td>
+                        <td>07.01 14:09:21</td>
+                        <td>醉驾、提请审问</td>
+                        <td>候问</td>
+                        <td>
+                            <span class="photo">
+                                <img src="./images/new_index/police_small.jpg" alt="">
+                            </span>
+                            <span>王雨</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>王小虎</td>
+                        <td>07.01 14:09:21</td>
+                        <td>醉驾、提请审问</td>
+                        <td>候问</td>
+                        <td>
+                            <span class="photo">
+                                <img src="./images/new_index/police_small.jpg" alt="">
+                            </span>
+                            <span>王雨</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>王小虎</td>
+                        <td>07.01 14:09:21</td>
+                        <td>醉驾、提请审问</td>
+                        <td>候问</td>
+                        <td>
+                            <span class="photo">
+                                <img src="./images/new_index/police_small.jpg" alt="">
+                            </span>
+                            <span>王雨</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>王小虎</td>
+                        <td>07.01 14:09:21</td>
+                        <td>醉驾、提请审问</td>
+                        <td>候问</td>
+                        <td>
+                            <span class="photo">
+                                <img src="./images/new_index/police_small.jpg" alt="">
+                            </span>
+                            <span>王雨</span>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="control">
+                <div class="left"></div>
+                <div class="right"></div>
+            </div>
+        </div>
+        <div class="warning">
+            <div class="title">
+                <span class="keys">预警信息</span>
+                <span class="num">(<span class="inner">4</span>)</span>
+            </div>
+            <div class="docket-table">
+                <table cellpadding="0" cellspacing="0">
+                    <thead>
+                    <tr>
+                        <th>涉案人员</th>
+                        <th>预警事项</th>
+                        <th>预警区域</th>
+                        <th>预警时间</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>王小虎</td>
+                        <td>人员聚集过多</td>
+                        <td>询问室5</td>
+                        <td>07.01 14:09:21</td>
+                    </tr>
+                    <tr>
+                        <td>王小虎</td>
+                        <td>人员聚集过多</td>
+                        <td>询问室5</td>
+                        <td>07.01 14:09:21</td>
+                    </tr>
+                    <tr>
+                        <td>王小虎</td>
+                        <td>人员聚集过多</td>
+                        <td>询问室5</td>
+                        <td>07.01 14:09:21</td>
+                    </tr>
+                    <tr>
+                        <td>王小虎</td>
+                        <td>人员聚集过多</td>
+                        <td>询问室5</td>
+                        <td>07.01 14:09:21</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="control">
+                <div class="left"></div>
+                <div class="right"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="./js/jquery-1.9.0.js"></script>
+<script src="./js/echarts.min.js"></script>
+<script>
+
+  $(function () {
+    renderLine();
+    function renderLine() {
+      var renderLine = echarts.init(document.getElementById('echarts'));
+      var option = {
+        backgroundColor: 'rgba(5,43,83,1)',
+        title: {
+          text: ''
+        },
+        tooltip: {
+          trigger: 'axis'
+        },
+        legend: {
+          y: '10px',
+          textStyle: {
+            color: '#aac9f1'          // 图例文字颜色
+          },
+          data: ['进入办案区', '进入办案区警员', '送所人员']
+        },
+        grid: {
+          left: '3%',
+          right: '4%',
+          bottom: '3%',
+          containLabel: true
+        },
+        xAxis: {
+          type: 'category',
+          boundaryGap: false,
+          data: ['11.1', '11.2', '11.3', '11.4', '11.5', '11.6', '11.7'],
+          axisLine: {
+            lineStyle: {
+              color: '#25a4e6' //坐标轴线颜色
+            }
+          }
+        },
+        yAxis: {
+          type: 'value',
+          axisLine: {
+            lineStyle: {
+              color: '#25a4e6' //坐标轴线颜色
+            }
+          },
+          splitLine: {
+            lineStyle: {
+              // 网格线
+              color: '#324968'
+            }
+          }
+        },
+        series: [
+          {
+            name: '进入办案区',
+            type: 'line',
+            stack: '总量',
+            data: [120, 132, 101, 134, 90, 230, 210],
+            itemStyle: {
+              normal: {
+                color: "#15a622" //图标颜色
+              }
+            },
+            lineStyle: {
+              normal: {
+                width: 1,  //连线粗细
+                color: "#15a622"  //连线颜色
+              }
+            }
+          },
+          {
+            name: '进入办案区警员',
+            type: 'line',
+            stack: '总量',
+            data: [220, 182, 191, 234, 290, 330, 310],
+            itemStyle: {
+              normal: {
+                color: "#26a5e7" //图标颜色
+              }
+            },
+            lineStyle: {
+              normal: {
+                width: 1,  //连线粗细
+                color: "#26a5e7"  //连线颜色
+              }
+            }
+          },
+          {
+            name: '送所人员',
+            type: 'line',
+            stack: '总量',
+            data: [150, 232, 201, 154, 190, 330, 410],
+            itemStyle: {
+              normal: {
+                color: "#0c4fab" //图标颜色
+              }
+            },
+            lineStyle: {
+              normal: {
+                width: 1,  //连线粗细
+                color: "#0c4fab"  //连线颜色
+              }
+            }
+          }
+        ]
+      };
+
+      renderLine.setOption(option);
+    }
+  });
+
+</script>
+</body>
+</html>

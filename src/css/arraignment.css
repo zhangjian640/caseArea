@@ -1,0 +1,152 @@
+.arraignment {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.arraignment .arraignment-title {
+    height: 55px;
+    line-height: 55px;
+    text-align: center;
+    background: #10529c;
+    color: #fff;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.arraignment-wrap {
+    width: 914px;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 40px;
+    padding-left: 43px;
+    padding-right: 43px;
+    border-top: 3px solid #f4f7f8;
+    text-align: center;
+}
+
+.arraignment-wrap .tags {
+    width: 445px;
+    height: 20px;
+    text-align: center;
+    display: inline-block;
+}
+
+.arraignment-wrap .tags li {
+    float: left;
+    color: #4274d1;
+    font-size: 18px;
+    text-align: center;
+}
+
+.arraignment-wrap .tags li span {
+    width: 11px;
+    height: 11px;
+    display: inline-block;
+    margin-right: 24px;
+}
+
+.empty-room span {
+    background: #395e85;
+}
+
+.using-room {
+    padding: 0 34px;
+}
+
+.using-room span {
+    background: #25a4e4;
+}
+
+.choice-room span {
+    background: #14db1d;
+}
+
+.arraignment-wrap .area {
+    margin-top: 30px;
+}
+
+.arraignment-wrap .area li {
+    width: 120px;
+    height: 39px;
+    line-height: 39px;
+    float: left;
+    margin: 8px 5px 0;
+    background: #395e85;
+    text-align: center;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.arraignment-wrap .area .using {
+    background: #25a4e4;
+}
+
+.arraignment-wrap .area .active {
+    background: #14db1d;
+}
+
+.operate {
+    width: 824px;
+    margin: 65px auto;
+}
+
+.operate > li {
+    width: 387px;
+    height: 242px;
+    color: #4274d1;
+    font-size: 24px;
+}
+
+.operate .handle {
+    float: left;
+    padding: 20px;
+    background: url(../images/shuakaBg.png) no-repeat;
+    box-sizing: border-box;
+}
+
+.operate .handle .item {
+    text-align: left;
+    font-size: 18px;
+}
+
+.operate .handle .default {
+    line-height: 202px;
+}
+
+.operate .room-code {
+    float: right;
+    background: url(../images/bainhao.png) no-repeat;
+}
+
+.operate .room-code input {
+    text-align: center;
+    width: 247px;
+    height: 52px;
+    margin-top: 107px;
+    background: #4085d3;
+    font-size: 26px;
+    color: #fff;
+    outline: none;
+    border: none;
+}
+
+.submit {
+    display: inline-block;
+    width: 238px;
+    margin-top: 80px;
+    height: 58px;
+    line-height: 58px;
+    background: #2262c7;
+    border-radius: 3px;
+    color: #fff;
+    font-size: 24px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.submit:active,
+.submit:hover {
+    background: #FF6B11;
+}

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>协同审讯</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/sync-trial.css">
+</head>
+<body>
+<div class="head clearfix">
+    <div class="room-wrap">
+        <div class="room">
+            审讯室10
+        </div>
+    </div>
+    <div class="desc">
+        <div class="case">
+            <img src="./images/sync-trial/icon_anjian.png" alt="">
+            <span class="keys">在审案件：</span>
+            <span class="values">张三盗窃财物案</span>
+        </div>
+        <div class="date">
+            <img src="./images/sync-trial/icon_shijian.png" alt="">
+            <span class="keys">开始时间：</span>
+            <span class="values">2017.12.11&nbsp;13:12:34</span>
+        </div>
+    </div>
+    <ul class="buttons">
+        <li class="trail"></li>
+        <li class="monitor"></li>
+        <li class="remote active"></li>
+        <li class="stop-trail"></li>
+    </ul>
+</div>
+<div class="main">
+    <div class="video-wrap"></div>
+    <div class="users">
+        <div class="item">
+            <div class="img">
+                <img src="./images/people1.png" alt="">
+            </div>
+            <div class="name">斯蒂芬</div>
+        </div>
+        <div class="item">
+            <div class="img">
+                <img src="./images/people1.png" alt="">
+            </div>
+            <div class="name">斯蒂芬</div>
+        </div>
+        <div class="item">
+            <div class="img">
+                <img src="./images/people1.png" alt="">
+            </div>
+            <div class="name">嫌疑人：斯蒂芬</div>
+        </div>
+    </div>
+</div>
+
+<!--远程协助审讯弹出框-->
+<div class="trial-box">
+    <div class="title">远程协助审讯</div>
+    <ul class="btns">
+        <li>智能审讯室1</li>
+        <li>智能审讯室2</li>
+        <li>智能审讯室3</li>
+        <li>智能审讯室4</li>
+        <li>智能审讯室5</li>
+        <li>智能审讯室6</li>
+    </ul>
+    <div class="invite">
+        <p>请选择参与协同审讯的参与方：</p>
+        <table>
+            <tr>
+                <td>
+                    <label for="">
+                        <input type="checkbox">
+                        武汉市公安局执法监管中心研判室
+                    </label>
+                </td>
+                <td>
+                    <label for="">
+                        <input type="checkbox">
+                        武汉市公安局执法监管中心研判室
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="">
+                        <input type="checkbox">
+                        青山区公安分局办案中心研判室
+                    </label>
+                </td>
+                <td>
+                    <label for="">
+                        <input type="checkbox">
+                        青山区公安分局办案中心研判室
+                    </label>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="add"><a href="">+邀请更多专家参与</a></div>
+    <div class="start-trial">开始审讯</div>
+</div>
+
+<script src="./js/jquery-1.9.0.js"></script>
+<script>
+  $('.remote').click(function () {
+    $('.trial-box').show();
+  });
+  $('.start-trial').click(function () {
+    $('.trial-box').hide();
+  });
+</script>
+</body>
+</html>

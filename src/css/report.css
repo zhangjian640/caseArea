@@ -1,0 +1,170 @@
+@charset "utf-8";
+
+.wrap-black-border {
+    width: 954px;
+    border: 3px solid #000000;
+    margin: 38px auto;
+}
+
+.wrap-bold-border {
+    margin: 43px;
+    border: 9px solid #d2d7d8;
+}
+
+.wrap {
+    margin: 12px;
+    border: 3px solid #d2d7d8;
+    background: url(../images/watermark.png) repeat;
+}
+
+.wrap .title {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.wrap .title .subtitle {
+    font-size: 47px;
+}
+
+.wrap .title .big-title {
+    line-height: 120px;
+    font-size: 102px;
+    font-weight: bold;
+    letter-spacing: 20px;
+}
+
+.wrap .title .entitle {
+    font-size: 26px;
+    word-spacing: 25px;
+}
+
+.wrap .title .text {
+    padding: 20px 60px;
+    text-align: left;
+    text-indent: 32px;
+    font-size: 16px;
+}
+
+.wrap table {
+    width: 760px;
+    margin: 0 auto 50px;
+}
+
+.wrap table td {
+    height: 54px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.wrap table .area {
+    text-align: left;
+}
+
+.wrap table input[type="checkbox"] {
+    margin: 0 11px 0 16px;
+    vertical-align: middle;
+}
+
+.wrap table td.title {
+    font-weight: bolder;
+}
+
+.wrap table .origin-pic {
+    display: inline-block;
+    width: 90px;
+    margin: 30px 15px 20px;
+    text-align: center;
+}
+
+.wrap table .origin-pic img {
+    width: 88px;
+    height: 98px;
+}
+
+.wrap table .compare-pic {
+    display: inline-block;
+    border: 2px dashed #8b8889;
+}
+
+.wrap table .compare-pic .pic {
+    display: inline-block;
+    width: 90px;
+    margin: 15px 10px 5px;
+    text-align: center;
+}
+
+.wrap table .compare-pic .pic img {
+    width: 88px;
+    height: 98px;
+}
+
+.wrap table .compare-pic .pic .red {
+    border: 2px solid red;
+    box-sizing: border-box;
+}
+
+.wrap table .message {
+    display: inline-block;
+    width: 500px;
+}
+
+.wrap table .message .key,
+.wrap table .recode .key,
+.wrap table .run-recode .key,
+.wrap table .drag-recode .key,
+.wrap table .mad-recode .key,
+.wrap table .focus-recode .key {
+    font-size: 14px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.wrap table .message .value,
+.wrap table .recode .value,
+.wrap table .run-recode .value,
+.wrap table .drag-recode .value,
+.wrap table .mad-recode .value,
+.wrap table .focus-recode .value {
+    font-size: 14px;
+    display: inline-block;
+}
+
+.wrap table .recode {
+    padding: 0 35px 35px 35px;
+}
+
+.wrap table .recode:first-child {
+    padding-top: 35px;
+}
+
+.wrap table .recode .item {
+    display: inline-block;
+    width: 250px;
+}
+
+.wrap table .run-recode {
+    display: inline-block;
+    width: 450px;
+    padding: 30px 15px;
+}
+
+.wrap table .run-recode .item {
+    display: inline-block;
+    width: 200px;
+}
+
+.wrap table .drag-recode,
+.wrap table .mad-recode,
+.wrap table .focus-recode {
+    padding: 30px;
+}
+
+.wrap table .drag-recode .item {
+    display: inline-block;
+    width: 250px;
+}
+
+.wrap table .mad-recode .item,
+.wrap table .focus-recode .item {
+    display: inline-block;
+}

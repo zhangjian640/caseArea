@@ -1,0 +1,264 @@
+@charset "utf-8";
+
+body {
+    overflow: hidden;
+    background: url(../images/sync-trial/body_bg.jpg) no-repeat;
+    background-size: cover;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    position: relative;
+}
+
+.head {
+    margin: 22px 15px 0;
+    height: 158px;
+    background: #052b53;
+    display: flex;
+    flex-direction: row;
+}
+
+.head .room-wrap {
+    width: 160px;
+    height: 124px;
+    margin-left: 50px;
+    margin-top: 17px;
+    background: url(../images/sync-trial/biaoti_bg.png) no-repeat;
+}
+
+.room-wrap .room {
+    width: 160px;
+    height: 51px;
+    margin-top: 55px;
+    line-height: 51px;
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+}
+
+.head .desc {
+    margin-left: 54px;
+    margin-top: 50px;
+}
+
+.head .desc .keys,
+.head .desc .values {
+    font-size: 30px;
+    vertical-align: middle;
+}
+
+.head .desc img {
+    vertical-align: middle;
+}
+
+.head .desc .keys {
+    color: #4c72ad;
+    margin-left: 25px;
+}
+
+.head .desc .values {
+    color: #148cef;
+}
+
+.head .buttons {
+    display: flex;
+    flex-direction: row;
+    margin-left: 25px;
+    margin-top: 40px;
+}
+
+.head .buttons li {
+    width: 240px;
+    height: 78px;
+    cursor: pointer;
+    margin-left: 25px;
+}
+
+.head .buttons .trail {
+    background: url(../images/sync-trial/btn_xietongshenxun.png);
+}
+
+.head .buttons .trail:hover,
+.head .buttons .trail.active {
+    background: url(../images/sync-trial/btn_xietongshenxun_hover.png);
+}
+
+.head .buttons .monitor {
+    background: url(../images/sync-trial/btn_shenxunquanjing.png);
+}
+
+.head .buttons .monitor:hover,
+.head .buttons .monitor.active {
+    background: url(../images/sync-trial/btn_shenxunquanjing_hover.png);
+}
+
+.head .buttons .remote {
+    background: url(../images/sync-trial/btn_yuanchengzhengju.png);
+}
+
+.head .buttons .remote:hover,
+.head .buttons .remote.active {
+    background: url(../images/sync-trial/btn_yuanchengzhengju_hover.png);
+}
+
+.head .buttons .stop-trail {
+    background: url(../images/sync-trial/btn_tingzhishenxun.png);
+}
+
+.head .buttons .stop-trail:hover,
+.head .buttons .stop-trail.active {
+    background: url(../images/sync-trial/btn_tingzhishenxun_hover.png);
+}
+
+.main {
+    margin: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.main .video-wrap {
+    width: 1550px;
+    height: 872px;
+    background: #000;
+}
+
+.main .users {
+    width: 328px;
+    height: 872px;
+    background: #052b53;
+}
+
+.main .users .item {
+    width: 328px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.main .users .item .img {
+    width: 170px;
+    height: 205px;
+    margin: 20px auto 0;
+}
+
+.main .users .item .img img {
+    width: 170px;
+}
+
+.main .users .item .img:nth-last-child(1) {
+    margin-top: 50px;
+}
+
+.main .users .item .name {
+    text-align: center;
+    font-size: 26px;
+    color: #6194e2;
+    margin-top: 10px;
+}
+
+/*弹出框*/
+.trial-box {
+    width: 990px;
+    height: 612px;
+    border: 15px solid #09345e;
+    position: absolute;
+    top: 320px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+    background: #fff;
+}
+
+.trial-box .title {
+    height: 40px;
+    line-height: 40px;
+    border: 1px solid #fff;
+    font-size: 24px;
+    color: #fff;
+    background: #004091;
+    text-align: center;
+}
+
+.trial-box .btns {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 20px 25px;
+}
+
+.trial-box .btns li {
+    width: 200px;
+    height: 50px;
+    line-height: 50px;
+    background-color: #004091;
+    color: #fff;
+    text-align: center;
+    margin: 10px;
+    /*cursor: pointer;*/
+}
+
+.trial-box .invite {
+    width: 930px;
+    box-sizing: border-box;
+    border-top: 1px solid #efefef;
+    padding-top: 25px;
+    padding-left: 40px;
+    color: #000;
+    font-size: 18px;
+}
+
+.trial-box .invite label {
+    margin-left: 65px;
+}
+
+.trial-box .invite table {
+    margin-top: 20px;
+}
+
+.trial-box .invite table td {
+    line-height: 40px;
+}
+
+.trial-box .invite input[type=checkbox] {
+    margin-right: 15px;
+    vertical-align: middle;
+}
+
+.trial-box .add {
+    position: absolute;
+    text-align: right;
+    bottom: 140px;
+    right: 85px;
+}
+
+.trial-box .add a {
+    font-size: 18px;
+    color: #2a95d9;
+}
+
+.trial-box .start-trial {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    bottom: 42px;
+    width: 168px;
+    height: 47px;
+    line-height: 47px;
+    text-align: center;
+    background: url(../images/sync-trial/btn_anniu.png) no-repeat;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.trial-box .start-trial:hover {
+    background: url(../images/sync-trial/btn_anniu_hover.png) no-repeat;
+}
